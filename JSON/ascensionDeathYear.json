@@ -1,0 +1,324 @@
+[
+  {
+    "id": 1,
+    "Année": 1978,
+    "Morts": 2,
+    "Sommets": 25,
+    "X.1": ""
+  },
+  {
+    "id": 2,
+    "Année": 1979,
+    "Morts": 6,
+    "Sommets": 18,
+    "X.1": ""
+  },
+  {
+    "id": 3,
+    "Année": 1980,
+    "Morts": 4,
+    "Sommets": 10,
+    "X.1": ""
+  },
+  {
+    "id": 4,
+    "Année": 1981,
+    "Morts": 0,
+    "Sommets": 5,
+    "X.1": ""
+  },
+  {
+    "id": 5,
+    "Année": 1982,
+    "Morts": 11,
+    "Sommets": 18,
+    "X.1": ""
+  },
+  {
+    "id": 6,
+    "Année": 1983,
+    "Morts": 3,
+    "Sommets": 23,
+    "X.1": ""
+  },
+  {
+    "id": 7,
+    "Année": 1984,
+    "Morts": 9,
+    "Sommets": 16,
+    "X.1": ""
+  },
+  {
+    "id": 8,
+    "Année": 1985,
+    "Morts": 7,
+    "Sommets": 30,
+    "X.1": ""
+  },
+  {
+    "id": 9,
+    "Année": 1986,
+    "Morts": 5,
+    "Sommets": 4,
+    "X.1": ""
+  },
+  {
+    "id": 10,
+    "Année": 1987,
+    "Morts": 3,
+    "Sommets": 2,
+    "X.1": ""
+  },
+  {
+    "id": 11,
+    "Année": 1988,
+    "Morts": 10,
+    "Sommets": 39,
+    "X.1": ""
+  },
+  {
+    "id": 12,
+    "Année": 1989,
+    "Morts": 8,
+    "Sommets": 24,
+    "X.1": ""
+  },
+  {
+    "id": 13,
+    "Année": 1990,
+    "Morts": 4,
+    "Sommets": 72,
+    "X.1": ""
+  },
+  {
+    "id": 14,
+    "Année": 1991,
+    "Morts": 2,
+    "Sommets": 38,
+    "X.1": ""
+  },
+  {
+    "id": 15,
+    "Année": 1992,
+    "Morts": 8,
+    "Sommets": 90,
+    "X.1": ""
+  },
+  {
+    "id": 16,
+    "Année": 1993,
+    "Morts": 7,
+    "Sommets": 129,
+    "X.1": ""
+  },
+  {
+    "id": 17,
+    "Année": 1994,
+    "Morts": 5,
+    "Sommets": 51,
+    "X.1": ""
+  },
+  {
+    "id": 18,
+    "Année": 1995,
+    "Morts": 4,
+    "Sommets": 83,
+    "X.1": ""
+  },
+  {
+    "id": 19,
+    "Année": 1996,
+    "Morts": 15,
+    "Sommets": 98,
+    "X.1": ""
+  },
+  {
+    "id": 20,
+    "Année": 1997,
+    "Morts": 9,
+    "Sommets": 85,
+    "X.1": ""
+  },
+  {
+    "id": 21,
+    "Année": 1998,
+    "Morts": 4,
+    "Sommets": 121,
+    "X.1": ""
+  },
+  {
+    "id": 22,
+    "Année": 1999,
+    "Morts": 4,
+    "Sommets": 118,
+    "X.1": ""
+  },
+  {
+    "id": 23,
+    "Année": 2000,
+    "Morts": 2,
+    "Sommets": 145,
+    "X.1": ""
+  },
+  {
+    "id": 24,
+    "Année": 2001,
+    "Morts": 5,
+    "Sommets": 182,
+    "X.1": ""
+  },
+  {
+    "id": 25,
+    "Année": 2002,
+    "Morts": 3,
+    "Sommets": 159,
+    "X.1": ""
+  },
+  {
+    "id": 26,
+    "Année": 2003,
+    "Morts": 4,
+    "Sommets": 267,
+    "X.1": ""
+  },
+  {
+    "id": 27,
+    "Année": 2004,
+    "Morts": 7,
+    "Sommets": 337,
+    "X.1": ""
+  },
+  {
+    "id": 28,
+    "Année": 2005,
+    "Morts": 6,
+    "Sommets": 307,
+    "X.1": ""
+  },
+  {
+    "id": 29,
+    "Année": 2006,
+    "Morts": 11,
+    "Sommets": 494,
+    "X.1": ""
+  },
+  {
+    "id": 30,
+    "Année": 2007,
+    "Morts": 7,
+    "Sommets": 634,
+    "X.1": ""
+  },
+  {
+    "id": 31,
+    "Année": 2008,
+    "Morts": 1,
+    "Sommets": 432,
+    "X.1": ""
+  },
+  {
+    "id": 32,
+    "Année": 2009,
+    "Morts": 5,
+    "Sommets": 468,
+    "X.1": ""
+  },
+  {
+    "id": 33,
+    "Année": 2010,
+    "Morts": 3,
+    "Sommets": 544,
+    "X.1": ""
+  },
+  {
+    "id": 34,
+    "Année": 2011,
+    "Morts": 4,
+    "Sommets": 553,
+    "X.1": ""
+  },
+  {
+    "id": 35,
+    "Année": 2012,
+    "Morts": 10,
+    "Sommets": 580,
+    "X.1": ""
+  },
+  {
+    "id": 36,
+    "Année": 2013,
+    "Morts": 8,
+    "Sommets": 683,
+    "X.1": ""
+  },
+  {
+    "id": 37,
+    "Année": 2014,
+    "Morts": 16,
+    "Sommets": 134,
+    "X.1": ""
+  },
+  {
+    "id": 38,
+    "Année": 2015,
+    "Morts": 14,
+    "Sommets": 0,
+    "X.1": ""
+  },
+  {
+    "id": 39,
+    "Année": 2016,
+    "Morts": 5,
+    "Sommets": 681,
+    "X.1": ""
+  },
+  {
+    "id": 40,
+    "Année": 2017,
+    "Morts": 6,
+    "Sommets": 692,
+    "X.1": ""
+  },
+  {
+    "id": 41,
+    "Année": 2018,
+    "Morts": 5,
+    "Sommets": 818,
+    "X.1": ""
+  },
+  {
+    "id": 42,
+    "Année": 2019,
+    "Morts": 11,
+    "Sommets": 876,
+    "X.1": ""
+  },
+  {
+    "id": 43,
+    "Année": 2020,
+    "Morts": 0,
+    "Sommets": 28,
+    "X.1": ""
+  },
+  {
+    "id": 44,
+    "Année": 2021,
+    "Morts": 4,
+    "Sommets": 534,
+    "X.1": ""
+  },
+  {
+    "id": 45,
+    "Année": 2022,
+    "Morts": 3,
+    "Sommets": 683,
+    "X.1": ""
+  },
+  {
+    "id": 46,
+    "Année": 2023,
+    "Morts": 18,
+    "Sommets": 656,
+    "X.1": ""
+  }
+]
