@@ -64,8 +64,24 @@ body {
 
             .hero_img_container {
                 img {
-                    width: 660px;
+                    width: 690px;
                     margin-top: 9rem;                
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+    body {
+        .hero {
+            .hero_container {
+                gap: 0;
+
+                .hero_img_container {
+                    img {
+                        width: 600px;
+                    }
                 }
             }
         }
