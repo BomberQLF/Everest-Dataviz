@@ -54,8 +54,17 @@ body .hero .hero_container .hero_title_container .hero_button a:hover {
   background-color: #2E3B60;
 }
 body .hero .hero_container .hero_img_container img {
-  width: 660px;
+  width: 690px;
   margin-top: 9rem;
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  body .hero .hero_container {
+    gap: 0;
+  }
+  body .hero .hero_container .hero_img_container img {
+    width: 600px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
