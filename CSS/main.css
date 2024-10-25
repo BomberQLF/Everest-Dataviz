@@ -17,7 +17,6 @@ body .hero {
 }
 body .hero .hero_container {
   display: flex;
-  justify-content: space-around;
   padding: 1% 0 0 1%;
   gap: 16rem;
 }
@@ -56,6 +55,45 @@ body .hero .hero_container .hero_title_container .hero_button a:hover {
 body .hero .hero_container .hero_img_container img {
   width: 690px;
   margin-top: 9rem;
+}
+body .presentation {
+  height: 100vh;
+}
+body .presentation .presentation_container {
+  display: flex;
+  padding: 12% 0 0 1%;
+  gap: 8rem;
+}
+body .presentation .presentation_container .presentation_img_container img {
+  width: 650px;
+}
+body .presentation .presentation_container .presentation_text_container {
+  max-width: 480px;
+}
+body .presentation .presentation_container .presentation_text_container h1 {
+  font-family: "Staatliches", sans-serif;
+  color: #2E3B60;
+  font-size: 3rem;
+  text-transform: none;
+}
+body .presentation .presentation_container .presentation_text_container p {
+  font-family: "Inter", sans-serif;
+  color: #2E3B60;
+  font-weight: 200;
+}
+body .ascensions {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .ascensions .ascensions_container {
+  display: flex;
+  padding: 1% 0 0 8%;
+  gap: 8rem;
+}
+body .ascensions .ascensions_container .ascensions_text_container {
+  max-width: 400px;
 }
 
 @media (min-width: 1024px) and (max-width: 1300px) {

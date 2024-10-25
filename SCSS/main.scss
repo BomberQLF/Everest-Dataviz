@@ -1,5 +1,7 @@
 $color-blue: #2E3B60;
 $font-familiy-staatliches: "Staatliches", sans-serif;
+$font-family-inter: "Inter", sans-serif;
+
 
 *,
 *::before,
@@ -20,7 +22,6 @@ body {
 
         .hero_container {
             display: flex;
-            justify-content: space-around;
             padding: 1% 0 0 1%;
             gap: 16rem;
 
@@ -67,6 +68,55 @@ body {
                     width: 690px;
                     margin-top: 9rem;                
                 }
+            }
+        }
+    }
+
+    .presentation {
+        height: 100vh;
+
+        .presentation_container {
+            display: flex;
+            padding: 12% 0 0 1%;
+            gap: 8rem;
+
+            .presentation_img_container {
+                img {
+                    width: 650px;
+                }
+            }
+
+            .presentation_text_container {
+                max-width: 480px;
+
+                h1 {
+                    font-family: $font-familiy-staatliches;
+                    color: $color-blue;
+                    font-size: 3rem;
+                    text-transform: none;
+                }
+                p {
+                    font-family: $font-family-inter;
+                    color: $color-blue;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+
+    .ascensions {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ascensions_container {
+            display: flex;
+            padding: 1% 0 0 8%;
+            gap: 8rem;
+
+            .ascensions_text_container {
+                max-width: 400px;
             }
         }
     }
