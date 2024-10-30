@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -102,6 +106,22 @@ body .ascensions .ascensions_container .ascensions_text_container {
   }
   body .hero .hero_container .hero_img_container img {
     width: 600px;
+  }
+  body .presentation .presentation_container {
+    gap: 7rem;
+    padding: 5% 1% 0 1%;
+  }
+  body .presentation .presentation_container .presentation_img_container img {
+    width: 500px;
+  }
+  body .presentation .presentation_container .presentation_text_container {
+    max-width: 400px;
+  }
+  body .presentation .presentation_container .presentation_text_container h1 {
+    font-size: 2.5rem;
+  }
+  body .presentation .presentation_container .presentation_text_container p {
+    font-size: 1rem;
   }
 }
 
