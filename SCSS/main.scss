@@ -116,11 +116,31 @@ body {
 
         .ascensions_container {
             display: flex;
-            padding: 1% 0 0 8%;
+            padding: 1% 0 0 0;
             gap: 8rem;
 
             .ascensions_text_container {
                 max-width: 400px;
+
+                h2 {
+                    color: #2E3B60;
+                    text-transform: uppercase;
+                    font-family: $font-familiy-staatliches;
+                    font-size: 2.5rem;
+                }
+                p {
+                    font-family: $font-family-inter;
+                    color: $color-blue;
+                    font-weight: 200;
+                }
+            }
+
+            .ascensions_img_container {
+                svg {
+                    margin-top: 5rem;
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
     }
@@ -161,5 +181,14 @@ body {
                 }
             }
         }
+    }
+
+    body .ascensions .ascensions_container .ascensions_text_container {
+        max-width: 720px;
+    }
+    body .ascensions .ascensions_container {
+        display: block;
+        padding: 0;
+        gap: 0rem;
     }
 }
