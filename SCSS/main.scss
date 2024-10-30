@@ -135,5 +135,27 @@ body {
                 }
             }
         }
+
+        .presentation .presentation_container {
+            gap: 7rem;
+            padding: 5% 1% 0 1%;
+    
+            .presentation_img_container {
+                img {
+                    width: 500px; 
+                }
+            }
+    
+            .presentation_text_container {
+                max-width: 400px; 
+    
+                h1 {
+                    font-size: 2.5rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 }
