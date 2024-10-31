@@ -115,6 +115,86 @@ body .ascensions .ascensions_container .ascensions_img_container svg {
   width: 100%;
   height: auto;
 }
+body .morts {
+  height: 100vh;
+  background-color: #2E3B60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body .morts .morts_container .mort_top_container {
+  margin-bottom: 5rem;
+}
+body .morts .morts_container .mort_top_container .upper_text,
+body .morts .morts_container .mort_top_container .lower_text {
+  color: #F1F1F1;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "Staatliches", sans-serif;
+  text-align: center;
+}
+body .morts .morts_container .mort_top_container .nombre_morts {
+  text-transform: uppercase;
+  color: #F1F1F1;
+  font-family: "Staatliches", sans-serif;
+  font-size: 8rem;
+  text-align: center;
+}
+body .morts .morts_container .chute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .morts .morts_container .avalanche {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body .morts .morts_container .morts_text_container {
+  max-width: 1000px;
+}
+body .morts .morts_container .morts_text_container p {
+  color: #F1F1F1;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+body .morts .morts_container input[type=range] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  height: 4px;
+}
+body .morts .morts_container input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+body .morts .morts_container input[type=range]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+body .morts .morts_container .range-container {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+}
+body .morts .morts_container .dates {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
+}
 
 @media (min-width: 1024px) and (max-width: 1300px) {
   body .hero .hero_container {
