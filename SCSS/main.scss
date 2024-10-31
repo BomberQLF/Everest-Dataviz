@@ -144,6 +144,102 @@ body {
             }
         }
     }
+
+    .morts {
+        height: 100vh;
+        background-color: #2E3B60;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .morts_container {
+            // position: relative;
+
+            .mort_top_container {
+                margin-bottom: 5rem;
+                
+                .upper_text,
+                .lower_text {
+                    color: #F1F1F1;
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                    font-family: $font-familiy-staatliches;
+                    text-align: center;
+                }
+
+                .nombre_morts {
+                    text-transform: uppercase;
+                    color:#F1F1F1;
+                    font-family: $font-familiy-staatliches;
+                    font-size: 8rem;
+                    text-align: center;
+                }
+            }
+
+            .chute {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .avalanche {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .morts_text_container {
+                max-width: 1000px;
+
+                p {
+                    color: #F1F1F1;
+                    font-family: $font-family-inter;
+                    font-weight: 200;
+                }
+            }
+
+            input[type="range"] {
+                width: 100%;
+                -webkit-appearance: none;
+                appearance: none;
+                background-color: #fff;
+                height: 4px;
+              }
+          
+              input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 15px;
+                height: 15px;
+                background-color: white;
+                cursor: pointer;
+                border-radius: 50%;
+              }
+          
+              input[type="range"]::-moz-range-thumb {
+                width: 15px;
+                height: 15px;
+                background-color: white;
+                cursor: pointer;
+                border-radius: 50%;
+              }
+
+              .range-container {
+                width: 100%;
+                text-align: center;
+                position: relative;
+                margin-top: 50px;
+              }
+          
+              .dates {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                color: white;
+                font-size: 14px;
+              }
+        }
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1300px) {
