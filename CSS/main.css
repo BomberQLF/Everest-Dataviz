@@ -62,6 +62,7 @@ body .hero .hero_container .hero_img_container img {
 }
 body .presentation {
   height: 100vh;
+  background-color: #2E3B60;
 }
 body .presentation .presentation_container {
   display: flex;
@@ -76,13 +77,13 @@ body .presentation .presentation_container .presentation_text_container {
 }
 body .presentation .presentation_container .presentation_text_container h1 {
   font-family: "Staatliches", sans-serif;
-  color: #2E3B60;
+  color: #F1F1F1;
   font-size: 3rem;
   text-transform: none;
 }
 body .presentation .presentation_container .presentation_text_container p {
   font-family: "Inter", sans-serif;
-  color: #2E3B60;
+  color: #F1F1F1;
   font-weight: 200;
 }
 body .ascensions {
@@ -114,6 +115,19 @@ body .ascensions .ascensions_container .ascensions_img_container svg {
   margin-top: 5rem;
   width: 100%;
   height: auto;
+}
+body .ascensions .ascensions_container .ascensions_img_container #tooltip {
+  opacity: 0;
+  top: 2248px;
+  left: 598px;
+  transition: 1s;
+  position: absolute;
+  color: rgb(46, 59, 96);
+  font-family: Staatliches;
+  padding: 1%;
+  border: 1px solid rgb(46, 59, 96);
+  border-radius: 14px;
+  background-color: rgb(241, 241, 241);
 }
 body .morts {
   height: 100vh;
