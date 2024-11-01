@@ -78,6 +78,7 @@ body {
 
     .presentation {
         height: 100vh;
+        background-color: #2E3B60;
 
         .presentation_container {
             display: flex;
@@ -95,13 +96,13 @@ body {
 
                 h1 {
                     font-family: $font-familiy-staatliches;
-                    color: $color-blue;
+                    color: #F1F1F1;
                     font-size: 3rem;
                     text-transform: none;
                 }
                 p {
                     font-family: $font-family-inter;
-                    color: $color-blue;
+                    color: #F1F1F1;
                     font-weight: 200;
                 }
             }
@@ -140,6 +141,19 @@ body {
                     margin-top: 5rem;
                     width: 100%;
                     height: auto;
+                }
+                #tooltip {
+                    opacity: 0;
+                    top: 2248px;
+                    left: 598px;
+                    transition: 1s;
+                    position: absolute;
+                    color: rgb(46, 59, 96);
+                    font-family: Staatliches;
+                    padding: 1%;
+                    border: 1px solid rgb(46, 59, 96);
+                    border-radius: 14px;
+                    background-color: rgb(241, 241, 241);
                 }
             }
         }
