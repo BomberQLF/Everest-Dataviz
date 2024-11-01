@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .datum(data)
         .attr("fill", "none")
         .attr("stroke", "#2E3B60")
-        .attr("stroke-width", 3)
+        .attr("stroke-width", 2)
         .attr("d", line);
 
     //   // Ajouter des cercles pour chaque point de données
