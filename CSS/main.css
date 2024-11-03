@@ -236,6 +236,45 @@ body .nations .nations_container .nations_text_container p {
   font-weight: 200;
   font-family: "Inter", sans-serif;
 }
+body .environment {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #2E3B60;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+body .environment h2 {
+  color: #F1F1F1;
+  font-family: "Staatliches", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 6rem;
+}
+body .environment .environment-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 4rem;
+}
+body .environment .environment-container .environment-text-container, body .environment .environment-container .environment-img-container {
+  width: 48%;
+}
+body .environment .environment-container .environment-text-container p, body .environment .environment-container .environment-img-container p {
+  color: #F1F1F1;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+body .environment .environment-container .environment-img-container img {
+  display: block;
+  max-width: 100%;
+  margin-top: 2rem;
+  padding-left: 20px;
+}
 body footer {
   height: 100vh;
   display: flex;
