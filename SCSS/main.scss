@@ -287,6 +287,53 @@ body {
         }
     }
 
+    .environment {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        background-color: #2E3B60;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    
+        h2 {
+            color: #F1F1F1;
+            font-family: $font-familiy-staatliches;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-bottom: 6rem;          
+        }
+    
+        .environment-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            gap: 4rem;
+    
+            .environment-text-container, .environment-img-container {
+                width: 48%;
+    
+                p {
+                    color: #F1F1F1;
+                    font-family: $font-family-inter;
+                    font-weight: 200;
+                    margin-bottom: 20px;
+                }
+            }
+    
+            .environment-img-container {
+                img {
+                    display: block;
+                    max-width: 100%;
+                    margin-top: 2rem;
+                    padding-left: 20px; // Optionnel pour espacer l'image du texte
+                }
+            }
+        }
+    }
+
     footer {
         height: 100vh;
         display: flex;
