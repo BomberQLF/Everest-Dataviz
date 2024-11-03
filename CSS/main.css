@@ -210,6 +210,70 @@ body .morts .morts_container .dates {
   color: white;
   font-size: 14px;
 }
+body .nations {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .nations .nations_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+body .nations .nations_container .nations_text_container {
+  width: 500px;
+}
+body .nations .nations_container .nations_text_container h2 {
+  color: #2E3B60;
+  text-transform: uppercase;
+  font-family: "Staatliches", sans-serif;
+  font-size: 2.5rem;
+}
+body .nations .nations_container .nations_text_container p {
+  color: #2E3B60;
+  font-weight: 200;
+  font-family: "Inter", sans-serif;
+}
+body footer {
+  height: 100vh;
+  display: flex;
+  background-color: #2E3B60;
+  padding: 6%;
+}
+body footer .contact_container h3 {
+  font-size: 3rem;
+  color: #F1F1F1;
+  text-transform: uppercase;
+  font-family: "Staatliches", sans-serif;
+}
+body footer .contact_container .links_container {
+  margin-left: 1.5rem;
+}
+body footer .contact_container .links_container .github_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body footer .contact_container .links_container .github_container a {
+  text-decoration: none;
+  color: #F1F1F1;
+  font-family: "Inter", sans-serif;
+}
+body footer .mentions_container {
+  margin-top: 5rem;
+}
+body footer .mentions_container h3 {
+  font-size: 3rem;
+  color: #F1F1F1;
+  text-transform: uppercase;
+  font-family: "Staatliches", sans-serif;
+}
+body footer .mentions_container .mentions_text_container p {
+  color: #F1F1F1;
+  font-family: "Inter", sans-serif;
+}
 
 @media (min-width: 1024px) and (max-width: 1300px) {
   body .hero .hero_container {
@@ -241,6 +305,9 @@ body .morts .morts_container .dates {
     display: block;
     padding: 0;
     gap: 0rem;
+  }
+  body footer .mentions_container .mentions_text_container {
+    width: 900px;
   }
 }
 
