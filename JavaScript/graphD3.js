@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
         .style("font-family", "Staatliches")
         .style("fill", "#2E3B60");
 
-
       // Axe des Y avec style
       svg
         .append("g")
@@ -68,9 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .style("stroke", "#333")
         .style("stroke-width", "2px");
 
-
-    // Ajouter des flocons comme points d'intersections
-    const tooltip = d3.select("#tooltip");
+      // Ajouter des flocons comme points d'intersections
+      const tooltip = d3.select("#tooltip");
 
       svg
         .selectAll("image")
@@ -86,18 +84,14 @@ document.addEventListener("DOMContentLoaded", () => {
         .attr("fill", "#2E3B60")
         .attr("padding", "2%")
         .on("mouseover", (ev, d) => {
-            tooltip
-            .style("opacity", "1")
-            .text(`Année: ${d3.timeFormat("%Y")(d.Année)} - Sommets: ${d.Sommets}`);
-        })
-        .on("mousemove", (ev) => {
           tooltip
-            .style("top", `${ev.pageY - 10}px`)
-            .style("left", `${ev.pageX + 10}px`)
-            .style("transition", "1s");
+            .style("opacity", "1")
+            .text(
+              `Année: ${d3.timeFormat("%Y")(d.Année)} - Sommets: ${d.Sommets}`
+            );
         })
         .on("mouseleave", () => {
-          tooltip.style("opacity", "0");
+          tooltip.style("opacity", "0"); // Cacher le tooltip lors du départ de la souris
         });
 
       // Générer la ligne avec d3.line()
@@ -116,16 +110,16 @@ document.addEventListener("DOMContentLoaded", () => {
         .attr("stroke-width", 2)
         .attr("d", line);
 
-    //   // Ajouter des cercles pour chaque point de données
-    //   svg
-    //     .selectAll("circle")
-    //     .data(data)
-    //     .enter()
-    //     .append("circle")
-    //     .attr("cx", (d) => x(d.Année))
-    //     .attr("cy", (d) => y(d.Sommets))
-    //     .attr("r", 5)
-    //     .attr("fill", "#2E3B60");
+      //   // Ajouter des cercles pour chaque point de données
+      //   svg
+      //     .selectAll("circle")
+      //     .data(data)
+      //     .enter()
+      //     .append("circle")
+      //     .attr("cx", (d) => x(d.Année))
+      //     .attr("cy", (d) => y(d.Sommets))
+      //     .attr("r", 5)
+      //     .attr("fill", "#2E3B60");
     })
     .catch((error) =>
       console.error("Erreur lors du chargement des données:", error)
