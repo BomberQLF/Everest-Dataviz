@@ -9,8 +9,16 @@ $font-family-inter: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
+html, body {
+    scroll-snap-type: y mandatory; 
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+.hero, .presentation, .ascensions, .morts, .nations, .environment, footer {
+    scroll-snap-align: start;
 }
 
 body {
@@ -105,6 +113,10 @@ body {
                     font-family: $font-family-inter;
                     color: #F1F1F1;
                     font-weight: 200;
+
+                    span {
+                        font-weight: 400;
+                    }
                 }
             }
         }
@@ -134,28 +146,43 @@ body {
                     font-family: $font-family-inter;
                     color: $color-blue;
                     font-weight: 200;
+
+                    span {
+                        font-weight: 400;
+                    }
+
+                    strong {
+                        display: flex;
+                        align-items: center;
+                        gap: .7rem;
+
+                        img {
+                            height: 30px;
+                        }
+                    }
                 }
             }
 
             .ascensions_img_container {
                 svg {
-                    margin-top: 5rem;
+                    margin-top: 1rem;
                     width: 100%;
                     height: auto;
                 }
                 #tooltip {
                     opacity: 0;
-                    top: 2248px;
-                    left: 598px;
-                    transition: 1s;
-                    position: absolute;
+                    top: 0;
+                    right: -440px;
+                    position: relative;
                     color: rgb(46, 59, 96);
                     font-family: Staatliches;
-                    padding: 1%;
+                    padding: 2%;
                     border: 1px solid rgb(46, 59, 96);
                     border-radius: 14px;
                     background-color: rgb(241, 241, 241);
-                }
+                    transition: opacity 0.3s;
+                    width: fit-content;
+                  }
             }
         }
     }
