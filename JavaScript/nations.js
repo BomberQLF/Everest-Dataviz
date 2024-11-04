@@ -1,61 +1,66 @@
-// Appel du JSON et traitement des données
-fetch('/Dataviz/JSON/nation_count.json')
-    .then(d => d.json())
-    .then(function (data) {
-        // Trier les données par count (du plus grand au plus petit) et prendre les 3 premiers
-        const topThreeData = data
-            .sort((a, b) => b.count - a.count)
-            .slice(0, 3);
+fetch("/Dataviz/JSON/nation_count.json")
+  .then((d) => d.json())
+  .then(function (data) {
+    // Trier les données par count (du plus grand au plus petit) et prendre les 3 premiers
+    const topThreeData = data.sort((a, b) => b.count - a.count).slice(0, 3);
 
-        // Code pour afficher la plus grosse valeur au milieu, la deuxième à gauche puis la dernière à droite comme un podium
-        const arrangedData = [topThreeData[1], topThreeData[0], topThreeData[2]];
+    // Code pour afficher la plus grosse valeur au milieu, la deuxième à gauche puis la dernière à droite comme un podium
+    const arrangedData = [topThreeData[1], topThreeData[0], topThreeData[2]];
 
-        // Extraire les noms des nations et les valeurs de count
-        const nations = arrangedData.map((item) => item.nation);
-        const counts = arrangedData.map((item) => item.count);
+    // Extraire les noms des nations et les valeurs de count
+    const nations = arrangedData.map((item) => item.nation.toLowerCase());
+    const counts = arrangedData.map((item) => item.count);
 
-        // Configuration du canvas
-        const canvas = document.getElementById("nations_graph");
-        const ctx = canvas.getContext('2d');
-        canvas.width = 500;
-        canvas.height = 400;
+    // Configuration du conteneur
+    const container = document.getElementById("nations_graph_container");
+    container.style.display = "flex";
+    container.style.justifyContent = "center";
+    container.style.gap = "50px";
 
-        const barWidth = 120;
-        const spacing = 50;   
-        const maxBarHeight = 300; 
+    const maxBarHeight = 300;
+    const maxCount = Math.max(...counts);
+    const scaleFactor = maxBarHeight / maxCount;
 
-        // Calculer l'échelle pour ajuster la hauteur des barres au canvas
-        const maxCount = Math.max(...counts);
-        const scaleFactor = maxBarHeight / maxCount;
+    // Créer chaque barre avec une classe spécifique pour chaque nation
+    counts.forEach((count, index) => {
+      const barHeight = count * scaleFactor;
+      const nation = nations[index];
 
-        // Position de départ pour centrer les trois barres
-        const totalWidth = 3 * barWidth + 2 * spacing;
-        const startX = (canvas.width - totalWidth) / 2; 
+      // Créer un conteneur pour la barre
+      const bar = document.createElement("div");
+      bar.classList.add("bar", nation);
+      bar.style.width = "120px";
+      bar.style.height = `${barHeight}px`;
+      bar.style.backgroundColor = "#2E3B60";
+      bar.style.position = "relative";
 
-        // Dessiner les barres
-        counts.forEach((count, index) => {
-            // Ajuster la hauteur avec le facteur d'échelle
-            const barHeight = count * scaleFactor; 
-            const xPosition = startX + index * (barWidth + spacing);
+      // Ajouter le nom de la nation
+      const label = document.createElement("div");
+      label.textContent = nation.toUpperCase();
+      label.style.position = "absolute";
+      label.style.bottom = "-20px";
+      label.style.width = "100%";
+      label.style.textAlign = "center";
+      label.style.color = "#F1F1F1";
+      label.style.font = "1rem Inter";
 
-            ctx.fillStyle = '#2E3B60'; 
-            ctx.fillRect(
-                xPosition,                   
-                canvas.height - barHeight,   
-                barWidth,                   
-                barHeight                    
-            );
-
-            // A SUPPRIMER QUAND J'AURAIS LES DRAPEAUX À LA PLACE
-            ctx.fillStyle = '#F1F1F1';
-            ctx.font = '1rem Inter';
-            ctx.fillText(
-                nations[index], 
-                xPosition + barWidth / 2 - ctx.measureText(nations[index]).width / 2, 
-                canvas.height - 10
-            );
-        });
-    })
-    .catch(error => {
-        console.error("Erreur lors du chargement u fichier JSON:", error);
+      // Ajouter les éléments au conteneur
+      bar.appendChild(label);
+      container.appendChild(bar);
     });
+
+    // Partie intéractive avec le bar chart
+
+    // Array qui contient les différents textes à afficher
+    const arr = [
+      `Eminuit autem inter humilia supergressa iam impotentia fines mediocrium delictorum nefanda Clematii cuiusdam Alexandrini nobilis mors repentina; cuius socrus cum misceri sibi generum, flagrans eius amore, non impetraret, ut ferebatur, per palatii pseudothyrum`,
+      `introducta, oblato pretioso reginae monili id adsecuta est, ut ad Honoratum tum comitem orientis formula missa letali omnino scelere nullo contactus idem Clematius nec hiscere nec loqui permissus occideretur.`,
+      `Since 1978, the deadliest years were 1996 with 15 deaths, 2014 with 16 deaths and 2023 with 18  deaths. The top 3 causes of death on Everest are Avalanche, Falls, and Acute mountain sickness. There are different steps during the ascension, and the more you go in altitude, the more it can be fatal. The higher risk of death is at the summit, between 8000 and 8850m. This is “The Death Zone”, at this altitude, the body begins to die minute by minute and cell by cell due to a
+        lack of oxygen.`,
+    ];
+    console.log(arr[0]);
+  })
+
+  .catch((error) => {
+    console.error("Erreur lors du chargement du fichier JSON:", error);
+  });
