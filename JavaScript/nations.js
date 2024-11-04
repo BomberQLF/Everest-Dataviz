@@ -34,18 +34,7 @@ fetch("/Dataviz/JSON/nation_count.json")
       bar.style.backgroundColor = "#2E3B60";
       bar.style.position = "relative";
 
-      // Ajouter le nom de la nation
-      const label = document.createElement("div");
-      label.textContent = nation.toUpperCase();
-      label.style.position = "absolute";
-      label.style.bottom = "-20px";
-      label.style.width = "100%";
-      label.style.textAlign = "center";
-      label.style.color = "#F1F1F1";
-      label.style.font = "1rem Inter";
-
       // Ajouter les éléments au conteneur
-      bar.appendChild(label);
       container.appendChild(bar);
     });
 
@@ -58,6 +47,7 @@ fetch("/Dataviz/JSON/nation_count.json")
       `Since 1978, the deadliest years were 1996 with 15 deaths, 2014 with 16 deaths and 2023 with 18  deaths. The top 3 causes of death on Everest are Avalanche, Falls, and Acute mountain sickness. There are different steps during the ascension, and the more you go in altitude, the more it can be fatal. The higher risk of death is at the summit, between 8000 and 8850m. This is “The Death Zone”, at this altitude, the body begins to die minute by minute and cell by cell due to a
         lack of oxygen.`,
     ];
+
     console.log(arr[0]);
   })
 
