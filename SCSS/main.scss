@@ -27,12 +27,12 @@ body {
         .hero_container {
             display: flex;
             padding: 1% 0 0 1%;
-            gap: 16rem;
+            gap: 4rem;
 
             .hero_title_container {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-evenly;
 
                 .hero_title {
                     margin-bottom: 12rem;
@@ -69,7 +69,7 @@ body {
 
             .hero_img_container {
                 img {
-                    width: 690px;
+                    width: 850px;
                     margin-top: 9rem;                
                 }
             }
@@ -210,6 +210,7 @@ body {
                     color: #F1F1F1;
                     font-family: $font-family-inter;
                     font-weight: 200;
+                    font-size: 1.1rem;
                 }
             }
 
@@ -266,7 +267,13 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 4rem;
+            gap: 18rem;
+
+            #nations_graph_container {
+                height: 400px;
+                display: flex;
+                align-items: flex-end;
+            }
 
             .nations_text_container {
                 width: 500px;
@@ -339,6 +346,7 @@ body {
         display: flex;
         background-color: #2E3B60;
         padding: 6%;
+        border-top: 6px dotted #f1f1f1;
 
         .contact_container {
             h3 {
@@ -433,5 +441,9 @@ body {
 
     body footer .mentions_container .mentions_text_container {
         width: 900px;
+    }
+
+    body .nations .nations_container {
+        gap: 3rem;
     }
 }
