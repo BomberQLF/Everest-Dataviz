@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+html, body {
+  scroll-snap-type: y mandatory;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+.hero, .presentation, .ascensions, .morts, .nations, .environment, footer {
+  scroll-snap-align: start;
 }
 
 body {
@@ -87,6 +95,9 @@ body .presentation .presentation_container .presentation_text_container p {
   color: #F1F1F1;
   font-weight: 200;
 }
+body .presentation .presentation_container .presentation_text_container p span {
+  font-weight: 400;
+}
 body .ascensions {
   height: 100vh;
   display: flex;
@@ -112,23 +123,35 @@ body .ascensions .ascensions_container .ascensions_text_container p {
   color: #2E3B60;
   font-weight: 200;
 }
+body .ascensions .ascensions_container .ascensions_text_container p span {
+  font-weight: 400;
+}
+body .ascensions .ascensions_container .ascensions_text_container p strong {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+body .ascensions .ascensions_container .ascensions_text_container p strong img {
+  height: 30px;
+}
 body .ascensions .ascensions_container .ascensions_img_container svg {
-  margin-top: 5rem;
+  margin-top: 1rem;
   width: 100%;
   height: auto;
 }
 body .ascensions .ascensions_container .ascensions_img_container #tooltip {
   opacity: 0;
-  top: 2248px;
-  left: 598px;
-  transition: 1s;
-  position: absolute;
+  top: 0;
+  right: -440px;
+  position: relative;
   color: rgb(46, 59, 96);
   font-family: Staatliches;
-  padding: 1%;
+  padding: 2%;
   border: 1px solid rgb(46, 59, 96);
   border-radius: 14px;
   background-color: rgb(241, 241, 241);
+  transition: opacity 0.3s;
+  width: fit-content;
 }
 body .morts {
   height: 100vh;
