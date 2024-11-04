@@ -22,12 +22,12 @@ body .hero {
 body .hero .hero_container {
   display: flex;
   padding: 1% 0 0 1%;
-  gap: 16rem;
+  gap: 4rem;
 }
 body .hero .hero_container .hero_title_container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 body .hero .hero_container .hero_title_container .hero_title {
   margin-bottom: 12rem;
@@ -57,7 +57,7 @@ body .hero .hero_container .hero_title_container .hero_button a:hover {
   background-color: #2E3B60;
 }
 body .hero .hero_container .hero_img_container img {
-  width: 690px;
+  width: 850px;
   margin-top: 9rem;
 }
 body .presentation {
@@ -173,6 +173,7 @@ body .morts .morts_container .morts_text_container p {
   color: #F1F1F1;
   font-family: "Inter", sans-serif;
   font-weight: 200;
+  font-size: 1.1rem;
 }
 body .morts .morts_container input[type=range] {
   width: 100%;
@@ -220,7 +221,12 @@ body .nations .nations_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 18rem;
+}
+body .nations .nations_container #nations_graph_container {
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
 }
 body .nations .nations_container .nations_text_container {
   width: 500px;
@@ -280,6 +286,7 @@ body footer {
   display: flex;
   background-color: #2E3B60;
   padding: 6%;
+  border-top: 6px dotted #f1f1f1;
 }
 body footer .contact_container h3 {
   font-size: 3rem;
@@ -347,6 +354,9 @@ body footer .mentions_container .mentions_text_container p {
   }
   body footer .mentions_container .mentions_text_container {
     width: 900px;
+  }
+  body .nations .nations_container {
+    gap: 3rem;
   }
 }
 
