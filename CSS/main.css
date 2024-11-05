@@ -116,7 +116,7 @@ body .ascensions .ascensions_container .ascensions_text_container h2 {
   color: #2E3B60;
   text-transform: uppercase;
   font-family: "Staatliches", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 body .ascensions .ascensions_container .ascensions_text_container p {
   font-family: "Inter", sans-serif;
@@ -191,16 +191,20 @@ body .morts .morts_container .avalanche {
   right: 0;
 }
 body .morts .morts_container .morts_text_container {
-  max-width: 1000px;
+  max-width: 1010px;
 }
 body .morts .morts_container .morts_text_container .text_wrapper {
   display: flex;
+  gap: 5rem;
 }
 body .morts .morts_container .morts_text_container p {
   color: #F1F1F1;
   font-family: "Inter", sans-serif;
   font-weight: 200;
   font-size: 1.1rem;
+}
+body .morts .morts_container .morts_text_container p span {
+  font-weight: 400;
 }
 body .morts .morts_container input[type=range] {
   width: 100%;
@@ -256,6 +260,9 @@ body .nations .nations_container #nations_graph_container {
   display: flex;
   align-items: flex-end;
 }
+body .nations .nations_container #nations_graph_container .bar:hover {
+  cursor: pointer;
+}
 body .nations .nations_container .nations_text_container {
   width: 500px;
 }
@@ -263,7 +270,7 @@ body .nations .nations_container .nations_text_container h2 {
   color: #2E3B60;
   text-transform: uppercase;
   font-family: "Staatliches", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 body .nations .nations_container .nations_text_container p {
   color: #2E3B60;
@@ -272,42 +279,38 @@ body .nations .nations_container .nations_text_container p {
 }
 body .environment {
   display: flex;
-  flex-direction: column;
-  padding: 40px;
-  background-color: #2E3B60;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: #2E3B60;
 }
-body .environment h2 {
+body .environment .environement_container {
+  display: flex;
+  padding: 1%;
+  gap: 8rem;
+}
+body .environment .environement_container .environement_text {
+  width: 400px;
+}
+body .environment .environement_container .environement_text h2 {
   color: #F1F1F1;
   font-family: "Staatliches", sans-serif;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  margin-bottom: 6rem;
+  font-size: 3rem;
 }
-body .environment .environment-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 1200px;
-  width: 100%;
-  gap: 4rem;
-}
-body .environment .environment-container .environment-text-container, body .environment .environment-container .environment-img-container {
-  width: 48%;
-}
-body .environment .environment-container .environment-text-container p, body .environment .environment-container .environment-img-container p {
+body .environment .environement_container .environement_text p {
   color: #F1F1F1;
   font-family: "Inter", sans-serif;
   font-weight: 200;
-  margin-bottom: 20px;
 }
-body .environment .environment-container .environment-img-container img {
-  display: block;
-  max-width: 100%;
-  margin-top: 2rem;
-  padding-left: 20px;
+body .environment .environement_container .environement_text p span {
+  font-weight: 400;
+}
+body .environment .environement_container .environement_img {
+  display: flex;
+  align-items: center;
+}
+body .environment .environement_container .environement_img img {
+  height: 490px;
 }
 body footer {
   height: 100vh;
@@ -384,6 +387,12 @@ body footer .mentions_container .mentions_text_container p {
     width: 900px;
   }
   body .nations .nations_container {
+    gap: 3rem;
+  }
+  body .environment .environement_container .environement_img img {
+    height: 370px;
+  }
+  body .environment .environement_container {
     gap: 3rem;
   }
 }
