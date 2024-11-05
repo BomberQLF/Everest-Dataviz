@@ -175,7 +175,7 @@ body .morts .morts_container .mort_top_container .lower_text {
 body .morts .morts_container .mort_top_container .nombre_morts {
   text-transform: uppercase;
   color: #F1F1F1;
-  font-family: "Staatliches", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 8rem;
   text-align: center;
   margin-top: 3rem;
