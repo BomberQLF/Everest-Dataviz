@@ -162,7 +162,7 @@ body .morts {
   position: relative;
 }
 body .morts .morts_container .mort_top_container {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 body .morts .morts_container .mort_top_container .upper_text,
 body .morts .morts_container .mort_top_container .lower_text {
@@ -178,6 +178,7 @@ body .morts .morts_container .mort_top_container .nombre_morts {
   font-family: "Staatliches", sans-serif;
   font-size: 8rem;
   text-align: center;
+  margin-top: 3rem;
 }
 body .morts .morts_container .chute {
   position: absolute;
@@ -191,6 +192,9 @@ body .morts .morts_container .avalanche {
 }
 body .morts .morts_container .morts_text_container {
   max-width: 1000px;
+}
+body .morts .morts_container .morts_text_container .text_wrapper {
+  display: flex;
 }
 body .morts .morts_container .morts_text_container p {
   color: #F1F1F1;
@@ -226,6 +230,7 @@ body .morts .morts_container .range-container {
   text-align: center;
   position: relative;
   margin-top: 50px;
+  margin-bottom: 3rem;
 }
 body .morts .morts_container .dates {
   display: flex;
