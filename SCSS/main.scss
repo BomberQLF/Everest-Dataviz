@@ -199,7 +199,7 @@ body {
             // position: relative;
 
             .mort_top_container {
-                margin-bottom: 5rem;
+                margin-bottom: 3rem;
                 
                 .upper_text,
                 .lower_text {
@@ -216,6 +216,7 @@ body {
                     font-family: $font-familiy-staatliches;
                     font-size: 8rem;
                     text-align: center;
+                    margin-top: 3rem;
                 }
             }
 
@@ -233,12 +234,16 @@ body {
             .morts_text_container {
                 max-width: 1000px;
 
-                p {
-                    color: #F1F1F1;
-                    font-family: $font-family-inter;
-                    font-weight: 200;
-                    font-size: 1.1rem;
+                .text_wrapper {
+                    display: flex;
                 }
+
+                    p {
+                        color: #F1F1F1;
+                        font-family: $font-family-inter;
+                        font-weight: 200;
+                        font-size: 1.1rem;
+                    }
             }
 
             input[type="range"] {
@@ -272,6 +277,7 @@ body {
                 text-align: center;
                 position: relative;
                 margin-top: 50px;
+                margin-bottom: 3rem;
               }
           
               .dates {
