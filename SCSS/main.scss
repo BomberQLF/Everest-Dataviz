@@ -140,7 +140,7 @@ body {
                     color: #2E3B60;
                     text-transform: uppercase;
                     font-family: $font-familiy-staatliches;
-                    font-size: 2.5rem;
+                    font-size: 3rem;
                 }
                 p {
                     font-family: $font-family-inter;
@@ -232,10 +232,11 @@ body {
             }
 
             .morts_text_container {
-                max-width: 1000px;
+                max-width: 1010px;
 
                 .text_wrapper {
                     display: flex;
+                    gap: 5rem;
                 }
 
                     p {
@@ -243,6 +244,10 @@ body {
                         font-family: $font-family-inter;
                         font-weight: 200;
                         font-size: 1.1rem;
+
+                        span {
+                            font-weight: 400;
+                        }
                     }
             }
 
@@ -306,6 +311,12 @@ body {
                 height: 400px;
                 display: flex;
                 align-items: flex-end;
+
+                .bar {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
             }
 
             .nations_text_container {
@@ -315,7 +326,7 @@ body {
                     color: #2E3B60;
                     text-transform: uppercase;
                     font-family: $font-familiy-staatliches;
-                    font-size: 2.5rem;
+                    font-size: 3rem;
                 }
 
                 p {
@@ -329,46 +340,42 @@ body {
 
     .environment {
         display: flex;
-        flex-direction: column;
-        padding: 40px;
-        background-color: #2E3B60;
         height: 100vh;
         justify-content: center;
         align-items: center;
-    
-        h2 {
-            color: #F1F1F1;
-            font-family: $font-familiy-staatliches;
-            text-transform: uppercase;
-            font-size: 2.5rem;
-            margin-bottom: 6rem;          
-        }
-    
-        .environment-container {
+        background-color: #2E3B60;
+
+        .environement_container {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            max-width: 1200px;
-            width: 100%;
-            gap: 4rem;
-    
-            .environment-text-container, .environment-img-container {
-                width: 48%;
-    
+            padding: 1%;
+            gap: 8rem;
+
+            .environement_text {
+                width: 400px;
+
+                h2 {
+                    color: #F1F1F1;
+                    font-family: $font-familiy-staatliches;
+                    font-size: 3rem;
+                }
+
                 p {
                     color: #F1F1F1;
                     font-family: $font-family-inter;
                     font-weight: 200;
-                    margin-bottom: 20px;
+
+                    span {
+                        font-weight: 400;
+                    }
                 }
             }
-    
-            .environment-img-container {
+
+            .environement_img {
+                display: flex;
+                align-items: center;
+
                 img {
-                    display: block;
-                    max-width: 100%;
-                    margin-top: 2rem;
-                    padding-left: 20px; // Optionnel pour espacer l'image du texte
+                    height: 490px;
                 }
             }
         }
@@ -477,6 +484,13 @@ body {
     }
 
     body .nations .nations_container {
+        gap: 3rem;
+    }
+    body .environment .environement_container .environement_img img {
+        height: 370px;
+    }
+
+    body .environment .environement_container {
         gap: 3rem;
     }
 }
