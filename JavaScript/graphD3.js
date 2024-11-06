@@ -27,11 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Filtrer les données pour conserver les années de 2013 à 2023
       data = data.filter(
-        (d) => d.Année >= parseYear("2013") && d.Année <= parseYear("2023")
+        (d) => d.Année >= parseYear("1993") && d.Année <= parseYear("2023")
       );
 
       // Définir les domaines pour chaque échelle
-      x.domain([parseYear("2013"), parseYear("2023")]); // Domaine fixe de 2013 à 2023 pour l'axe X
+      x.domain([parseYear("1993"), parseYear("2023")]);
       y.domain([0, d3.max(data, (d) => d.Sommets)]);
 
       // Axe des X avec années complètes et styles de texte
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .call(
           d3
             .axisBottom(x)
-            .ticks(d3.timeYear.every(1))
+            .ticks(d3.timeYear.every(3))
             .tickFormat(d3.timeFormat("%Y"))
         )
         .selectAll("text")
