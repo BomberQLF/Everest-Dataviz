@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
     <script src="https://d3js.org/d3.v7.min.js" defer></script>
     <script src="/Dataviz/JavaScript/graphD3.js"></script>
     <script src="/Dataviz/JavaScript/morts.js"></script>
@@ -90,7 +91,7 @@
         <div class="morts_container">
             <div class="mort_top_container">
                 <div class="upper_text">The fatality</div>
-                <div class="lower_text">rate of Everest</div>
+                <div class="lower_text">numbers of Everest</div>
                 <div class="nombre_morts">8</div>
             </div>
             <img class="chute" src="/Dataviz/assets/chute.svg" alt="">
@@ -113,11 +114,15 @@
     <section class="nations">
         <div class="nations_container">
             <div class="graph_container">
-                <div id="nations_graph_container"></div>
+                <div id="nations_graph_container">
+                    <div class="bar bar-uk"><img class="uk-img" src="/Dataviz/assets/uk.svg" alt=""></div>
+                    <div class="bar bar-usa"><img src="/Dataviz/assets/usa.svg" alt="" class="usa-img"></div>
+                    <div class="bar bar-nepal"><img src="/Dataviz/assets/nepal.svg" class="nepal-img" alt=""></div>
+                </div>
             </div>
             <div class="nations_text_container">
-                <h2>The origin of climbers</h2>
-                <p>Eminuit autem inter humilia supergressa iam impotentia fines mediocrium delictorum nefanda Clematii
+                <h2 id="defaultTitle">The origin of climbers</h2>
+                <p id="default">Eminuit autem inter humilia supergressa iam impotentia fines mediocrium delictorum nefanda Clematii
                     cuiusdam Alexandrini nobilis mors repentina; cuius socrus cum misceri sibi generum, flagrans eius
                     amore, non impetraret, ut ferebatur, per palatii pseudothyrum
                     <br><br>
