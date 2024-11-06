@@ -175,7 +175,8 @@ body .morts .morts_container .mort_top_container .lower_text {
 body .morts .morts_container .mort_top_container .nombre_morts {
   text-transform: uppercase;
   color: #F1F1F1;
-  font-family: "Inter", sans-serif;
+  font-family: "Signika", sans-serif;
+  font-weight: 100;
   font-size: 8rem;
   text-align: center;
   margin-top: 3rem;
@@ -259,6 +260,28 @@ body .nations .nations_container #nations_graph_container {
   height: 400px;
   display: flex;
   align-items: flex-end;
+  margin-top: 9rem;
+}
+body .nations .nations_container #nations_graph_container .bar {
+  position: relative;
+}
+body .nations .nations_container #nations_graph_container .bar .uk-img {
+  position: absolute;
+  height: 280px;
+  top: -28.3rem;
+  right: -16.5rem;
+}
+body .nations .nations_container #nations_graph_container .bar .usa-img {
+  position: absolute;
+  height: 280px;
+  right: -24.5rem;
+  top: -36rem;
+}
+body .nations .nations_container #nations_graph_container .bar .nepal-img {
+  position: absolute;
+  height: 280px;
+  right: -33rem;
+  top: -25.5rem;
 }
 body .nations .nations_container #nations_graph_container .bar:hover {
   cursor: pointer;
