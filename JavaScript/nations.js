@@ -31,7 +31,7 @@ fetch("/Dataviz/JSON/nation_count.json")
       bar.classList.add("bar", nation);
       bar.style.width = "120px";
       bar.style.height = `${barHeight}px`;
-      bar.style.border = "1px solid #2E3B60";
+      bar.style.border = "1.5px solid #2E3B60";
       bar.style.position = "relative";
 
       // Ajouter les éléments au conteneur
