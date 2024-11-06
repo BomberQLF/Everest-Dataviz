@@ -1,7 +1,7 @@
 $color-blue: #2E3B60;
 $font-familiy-staatliches: "Staatliches", sans-serif;
 $font-family-inter: "Inter", sans-serif;
-
+$font-family-signika: "Signika", sans-serif;
 
 *,
 *::before,
@@ -213,7 +213,8 @@ body {
                 .nombre_morts {
                     text-transform: uppercase;
                     color:#F1F1F1;
-                    font-family: $font-family-inter;
+                    font-family: $font-family-signika;
+                    font-weight: 100;
                     font-size: 8rem;
                     text-align: center;
                     margin-top: 3rem;
@@ -311,8 +312,32 @@ body {
                 height: 400px;
                 display: flex;
                 align-items: flex-end;
+                margin-top: 9rem;
 
                 .bar {
+                    position: relative;
+
+                    .uk-img {
+                        position: absolute;
+                        height: 280px;
+                        top: -28.3rem;
+                        right: -16.5rem;
+                    }
+
+                    .usa-img {
+                        position: absolute;
+                        height: 280px;
+                        right: -24.5rem;
+                        top: -36rem;
+                    }
+
+                    .nepal-img {
+                        position: absolute;
+                        height: 280px;
+                        right: -33rem;
+                        top: -25.5rem;
+                    }
+
                     &:hover {
                         cursor: pointer;
                     }
