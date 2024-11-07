@@ -162,7 +162,7 @@ body .morts {
   position: relative;
 }
 body .morts .morts_container .mort_top_container {
-  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 body .morts .morts_container .mort_top_container .upper_text,
 body .morts .morts_container .mort_top_container .lower_text {
@@ -179,7 +179,7 @@ body .morts .morts_container .mort_top_container .nombre_morts {
   font-weight: 100;
   font-size: 8rem;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 body .morts .morts_container .chute {
   position: absolute;
@@ -191,8 +191,22 @@ body .morts .morts_container .avalanche {
   top: 0;
   right: 0;
 }
+body .morts .morts_container .arrow {
+  position: relative;
+  bottom: -170px;
+  left: -50px;
+}
+body .morts .morts_container .text_relative {
+  position: relative;
+  top: -35px;
+  left: -10px;
+  color: #F1F1F1;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+}
 body .morts .morts_container .morts_text_container {
   max-width: 1010px;
+  margin-top: 6rem;
 }
 body .morts .morts_container .morts_text_container .text_wrapper {
   display: flex;
@@ -217,18 +231,24 @@ body .morts .morts_container input[type=range] {
 body .morts .morts_container input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 15px;
-  height: 15px;
-  background-color: white;
+  width: 30px;
+  height: 30px;
+  background-image: url("/Dataviz/assets/croix.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   cursor: pointer;
-  border-radius: 50%;
+  border: none;
 }
 body .morts .morts_container input[type=range]::-moz-range-thumb {
-  width: 15px;
-  height: 15px;
-  background-color: white;
+  width: 30px;
+  height: 30px;
+  background-image: url("/Dataviz/assets/croix.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   cursor: pointer;
-  border-radius: 50%;
+  border: none;
 }
 body .morts .morts_container .range-container {
   width: 100%;
