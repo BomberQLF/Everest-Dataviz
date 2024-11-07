@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         d.Sommets = +d.Sommets;
       });
 
-      // Filtrer les données pour conserver les années de 2013 à 2023
+      // Filtrer les données pour conserver les années de 1993 à 2023
       data = data.filter(
         (d) => d.Année >= parseYear("1993") && d.Année <= parseYear("2023")
       );
@@ -67,6 +67,22 @@ document.addEventListener("DOMContentLoaded", () => {
         .style("stroke", "#333")
         .style("stroke-width", "2px");
 
+      // Générer la ligne avec d3.line()
+      const line = d3
+        .line()
+        .x((d) => x(d.Année))
+        .y((d) => y(d.Sommets))
+        .curve(d3.curveCatmullRom.alpha(0.5));
+
+      // Ajouter la ligne au SVG avec couleur et style
+      svg
+        .append("path")
+        .datum(data)
+        .attr("fill", "none")
+        .attr("stroke", "#2E3B60")
+        .attr("stroke-width", 2)
+        .attr("d", line);
+
       // Ajouter des flocons comme points d'intersections
       const tooltip = d3.select("#tooltip");
 
@@ -91,35 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
             );
         })
         .on("mouseleave", () => {
-          tooltip.style("opacity", "0"); // Cacher le tooltip lors du départ de la souris
+          tooltip.style("opacity", "0");
         });
-
-      // Générer la ligne avec d3.line()
-      const line = d3
-        .line()
-        .x((d) => x(d.Année))
-        .y((d) => y(d.Sommets))
-        .curve(d3.curveCatmullRom.alpha(0.5));
-
-      // Ajouter la ligne au SVG avec couleur et style
-      svg
-        .append("path")
-        .datum(data)
-        .attr("fill", "none")
-        .attr("stroke", "#2E3B60")
-        .attr("stroke-width", 2)
-        .attr("d", line);
-
-      //   // Ajouter des cercles pour chaque point de données
-      //   svg
-      //     .selectAll("circle")
-      //     .data(data)
-      //     .enter()
-      //     .append("circle")
-      //     .attr("cx", (d) => x(d.Année))
-      //     .attr("cy", (d) => y(d.Sommets))
-      //     .attr("r", 5)
-      //     .attr("fill", "#2E3B60");
     })
     .catch((error) =>
       console.error("Erreur lors du chargement des données:", error)
