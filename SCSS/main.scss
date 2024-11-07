@@ -199,7 +199,7 @@ body {
             // position: relative;
 
             .mort_top_container {
-                margin-bottom: 3rem;
+                margin-top: 3rem;
                 
                 .upper_text,
                 .lower_text {
@@ -217,7 +217,7 @@ body {
                     font-weight: 100;
                     font-size: 8rem;
                     text-align: center;
-                    margin-top: 3rem;
+                    margin-top: 2rem;
                 }
             }
 
@@ -231,9 +231,23 @@ body {
                 top: 0;
                 right: 0;
             }
+            .arrow {
+                position: relative;
+                bottom: -170px;
+                left: -50px;
+            }
+            .text_relative {
+                position: relative;
+                top: -35px;
+                left: -10px;
+                color: #F1F1F1;
+                font-family: $font-family-inter;
+                font-size: .9rem;
+            }
 
             .morts_text_container {
                 max-width: 1010px;
+                margin-top: 6rem;
 
                 .text_wrapper {
                     display: flex;
@@ -263,20 +277,27 @@ body {
               input[type="range"]::-webkit-slider-thumb {
                 -webkit-appearance: none;
                 appearance: none;
-                width: 15px;
-                height: 15px;
-                background-color: white;
+                width: 30px;
+                height: 30px;
+                background-image: url('/Dataviz/assets/croix.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
                 cursor: pointer;
-                border-radius: 50%;
+                border: none;
               }
-          
+              
               input[type="range"]::-moz-range-thumb {
-                width: 15px;
-                height: 15px;
-                background-color: white;
+                width: 30px;
+                height: 30px;
+                background-image: url('/Dataviz/assets/croix.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
                 cursor: pointer;
-                border-radius: 50%;
+                border: none;
               }
+              
 
               .range-container {
                 width: 100%;
