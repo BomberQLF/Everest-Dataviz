@@ -17,16 +17,20 @@ fetch("/Dataviz/JSON/nation_count.json")
     container.style.justifyContent = "center";
     container.style.gap = "50px";
 
+    // Ici j'utilise le spread operator
+    // Il sert à décomposer individuellement dans un tableau les éléments de count et séléctionner le plus grand élément
     const maxBarHeight = 300;
     const maxCount = Math.max(...counts);
     const scaleFactor = maxBarHeight / maxCount;
 
+    // Boucle forEach qui va permettre de gérer les 3 barres
     counts.forEach((count, index) => {
       const barHeight = count * scaleFactor;
       const nation = nations[index];
     
       // Créer un conteneur pour la barre
       const bar = document.createElement("div");
+      // Ajout de la classe approprié pour chaque nation
       bar.classList.add("bar", nation);
       bar.style.width = "120px";
       bar.style.height = `${barHeight}px`;
@@ -80,7 +84,7 @@ fetch("/Dataviz/JSON/nation_count.json")
     const text = document.getElementById("default");
     const title = document.getElementById("defaultTitle");
 
-    // Liste des titres (correction de la virgule manquante)
+    // Liste des titres
     const arrTitle = [
       `The Origin of Climbers`,
       `UK Climbers`,
@@ -137,3 +141,16 @@ fetch("/Dataviz/JSON/nation_count.json")
   .catch((error) => {
     console.error("Erreur lors du chargement du fichier JSON:", error);
   });
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  // Définition de la taille du SVG
   const width = 700;
   const height = 450;
   const marginTop = 20;
@@ -6,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const marginBottom = 50;
   const marginLeft = 50;
 
+  // Séléction de l'élément container auquel on y ajoute un SVG
   const svg = d3
     .select(".ascensions_img_container")
     .append("svg")
@@ -41,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .call(
           d3
             .axisBottom(x)
+            // Every correspond à l'affichage des X, ici ca veut dire "affiche tous les 3 ans"
             .ticks(d3.timeYear.every(3))
             .tickFormat(d3.timeFormat("%Y"))
         )
@@ -91,6 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .data(data)
         .enter()
         .append("image")
+        // Flocons de neige en guise de points d'intersection pour être davantage dans le thème
         .attr("xlink:href", "/Dataviz/assets/flocon.svg")
         .attr("x", (d) => x(d.Année) - 10)
         .attr("y", (d) => y(d.Sommets) - 10)
@@ -99,6 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .attr("weight", "bold")
         .attr("fill", "#2E3B60")
         .attr("padding", "2%")
+        // Faire apparaitre / Disparaitre le tooltip (la boite qui affiche les informations par rapport au données survolés)
         .on("mouseover", (ev, d) => {
           tooltip
             .style("opacity", "1")
@@ -114,3 +120,20 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Erreur lors du chargement des données:", error)
     );
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
