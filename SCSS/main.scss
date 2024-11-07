@@ -8,19 +8,15 @@ $font-family-signika: "Signika", sans-serif;
 *::after {
   box-sizing: border-box;
 }
-
 html, body {
     scroll-snap-type: y mandatory; 
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 .hero, .presentation, .ascensions, .morts, .nations, .environment, footer {
     scroll-snap-align: start;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -53,7 +49,6 @@ body {
                         font-size: 8rem;
                     }
                 }
-
                 .hero_button {
                     margin: 0 0 1rem 1rem;
 
@@ -74,7 +69,6 @@ body {
                     }
                 }
             }
-
             .hero_img_container {
                 img {
                     width: 850px;
@@ -83,7 +77,6 @@ body {
             }
         }
     }
-
     .presentation {
         height: 100vh;
         background-color: #2E3B60;
@@ -121,7 +114,6 @@ body {
             }
         }
     }
-
     .ascensions {
         height: 100vh;
         display: flex;
@@ -162,7 +154,6 @@ body {
                     }
                 }
             }
-
             .ascensions_img_container {
                 svg {
                     margin-top: 8rem;
@@ -186,7 +177,6 @@ body {
             }
         }
     }
-
     .morts {
         height: 100vh;
         background-color: #2E3B60;
@@ -209,7 +199,6 @@ body {
                     font-family: $font-familiy-staatliches;
                     text-align: center;
                 }
-
                 .nombre_morts {
                     text-transform: uppercase;
                     color:#F1F1F1;
@@ -220,7 +209,6 @@ body {
                     margin-top: 2rem;
                 }
             }
-
             .chute {
                 position: absolute;
                 top: 0;
@@ -265,7 +253,6 @@ body {
                         }
                     }
             }
-
             input[type="range"] {
                 width: 100%;
                 -webkit-appearance: none;
@@ -273,7 +260,6 @@ body {
                 background-color: #fff;
                 height: 4px;
               }
-          
               input[type="range"]::-webkit-slider-thumb {
                 -webkit-appearance: none;
                 appearance: none;
@@ -286,7 +272,6 @@ body {
                 cursor: pointer;
                 border: none;
               }
-              
               input[type="range"]::-moz-range-thumb {
                 width: 30px;
                 height: 30px;
@@ -297,8 +282,6 @@ body {
                 cursor: pointer;
                 border: none;
               }
-              
-
               .range-container {
                 width: 100%;
                 text-align: center;
@@ -306,7 +289,6 @@ body {
                 margin-top: 50px;
                 margin-bottom: 3rem;
               }
-          
               .dates {
                 display: flex;
                 justify-content: space-between;
@@ -316,7 +298,6 @@ body {
               }
         }
     }
-
     .nations {
         height: 100vh;
         display: flex;
@@ -344,27 +325,23 @@ body {
                         top: -28.3rem;
                         right: -16.5rem;
                     }
-
                     .usa-img {
                         position: absolute;
                         height: 280px;
                         right: -24.5rem;
                         top: -36rem;
                     }
-
                     .nepal-img {
                         position: absolute;
                         height: 280px;
                         right: -33rem;
                         top: -25.5rem;
                     }
-
                     &:hover {
                         cursor: pointer;
                     }
                 }
             }
-
             .nations_text_container {
                 width: 500px;
 
@@ -374,7 +351,6 @@ body {
                     font-family: $font-familiy-staatliches;
                     font-size: 3rem;
                 }
-
                 p {
                     color: #2E3B60;
                     font-weight: 200;
@@ -383,7 +359,6 @@ body {
             }
         }
     }
-
     .environment {
         display: flex;
         height: 100vh;
@@ -404,7 +379,6 @@ body {
                     font-family: $font-familiy-staatliches;
                     font-size: 3rem;
                 }
-
                 p {
                     color: #F1F1F1;
                     font-family: $font-family-inter;
@@ -415,7 +389,6 @@ body {
                     }
                 }
             }
-
             .environement_img {
                 display: flex;
                 align-items: center;
@@ -426,7 +399,6 @@ body {
             }
         }
     }
-
     footer {
         height: 100vh;
         display: flex;
@@ -458,17 +430,14 @@ body {
                 }
             }
         }
-
         .mentions_container {
             margin-top: 5rem;
-
             h3 {
                 font-size: 3rem;
                 color: #F1F1F1;
                 text-transform: uppercase;
                 font-family: $font-familiy-staatliches;
             }
-
             .mentions_text_container {
                 p {
                     color: #F1F1F1;
@@ -478,7 +447,6 @@ body {
         }
     }
 }
-
 @media (min-width: 1024px) and (max-width: 1300px) {
     body {
         .hero {
@@ -492,7 +460,6 @@ body {
                 }
             }
         }
-
         .presentation .presentation_container {
             gap: 7rem;
             padding: 5% 1% 0 1%;
@@ -502,7 +469,6 @@ body {
                     width: 500px; 
                 }
             }
-    
             .presentation_text_container {
                 max-width: 400px; 
     
@@ -515,7 +481,6 @@ body {
             }
         }
     }
-
     body .ascensions .ascensions_container .ascensions_text_container {
         max-width: 720px;
     }
@@ -524,7 +489,6 @@ body {
         padding: 0;
         gap: 0rem;
     }
-
     body footer .mentions_container .mentions_text_container {
         width: 900px;
     }
@@ -535,7 +499,6 @@ body {
     body .environment .environement_container .environement_img img {
         height: 370px;
     }
-
     body .environment .environement_container {
         gap: 3rem;
     }
