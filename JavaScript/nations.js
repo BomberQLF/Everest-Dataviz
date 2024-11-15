@@ -1,4 +1,4 @@
-fetch("/Dataviz/JSON/nation_count.json")
+fetch("./JSON/nation_count.json")
   .then((d) => d.json())
   .then(function (data) {
     // Trier les données par count (du plus grand au plus petit) et prendre les 3 premiers

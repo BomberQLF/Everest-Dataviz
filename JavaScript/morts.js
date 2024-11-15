@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   inputContainer.classList.add("inputContainer");
 
   // Liaison avec les données JSON
-  fetch("/Dataviz/JSON/ascensionDeathYear.json")
+  fetch("./JSON/ascensionDeathYear.json")
     .then((resp) => resp.json())
     .then(function (data) {
       // Crée la structure HTML avec le nombre de morts par défaut pour 2013

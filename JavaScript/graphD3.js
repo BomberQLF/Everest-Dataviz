@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const y = d3.scaleLinear().range([height - marginBottom, marginTop]);
 
   // Charger et traiter les données
-  d3.json("/Dataviz/JSON/ascensionDeathYear.json")
+  d3.json("./JSON/ascensionDeathYear.json")
     .then((data) => {
       const parseYear = d3.timeParse("%Y");
       data.forEach((d) => {
