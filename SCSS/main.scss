@@ -263,9 +263,9 @@ body {
               input[type="range"]::-webkit-slider-thumb {
                 -webkit-appearance: none;
                 appearance: none;
-                width: 30px;
-                height: 30px;
-                background-image: url('/Dataviz/assets/croix.png');
+                width: 20px;
+                height: 25px;
+                background-image: url('./assets/floconBlanc.svg');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -273,9 +273,9 @@ body {
                 border: none;
               }
               input[type="range"]::-moz-range-thumb {
-                width: 30px;
-                height: 30px;
-                background-image: url('/Dataviz/assets/croix.png');
+                width: 20px;
+                height: 25px;
+                background-image: url('./assets/floconBlanc.png');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;

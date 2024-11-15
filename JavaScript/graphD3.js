@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .enter()
         .append("image")
         // Flocons de neige en guise de points d'intersection pour être davantage dans le thème
-        .attr("xlink:href", "/Dataviz/assets/flocon.svg")
+        .attr("xlink:href", "./assets/flocon.svg")
         .attr("x", (d) => x(d.Année) - 10)
         .attr("y", (d) => y(d.Sommets) - 10)
         .attr("width", 20)
