@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
           tooltip
             .style("opacity", "1")
             .text(
-              `Année: ${d3.timeFormat("%Y")(d.Année)} - Sommets: ${d.Sommets}`
+              `Year: ${d3.timeFormat("%Y")(d.Année)} - Ascensions: ${d.Sommets}`
             );
         })
         .on("mouseleave", () => {
