@@ -1,7 +1,6 @@
 $color-blue: #2E3B60;
 $font-familiy-staatliches: "Staatliches", sans-serif;
 $font-family-inter: "Inter", sans-serif;
-$font-family-signika: "Signika", sans-serif;
 
 *,
 *::before,
@@ -202,8 +201,8 @@ body {
                 .nombre_morts {
                     text-transform: uppercase;
                     color:#F1F1F1;
-                    font-family: $font-family-signika;
-                    font-weight: 100;
+                    font-family: $font-family-inter;
+                    font-weight: 400;
                     font-size: 8rem;
                     text-align: center;
                     margin-top: 2rem;
