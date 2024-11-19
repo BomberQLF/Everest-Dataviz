@@ -79,7 +79,7 @@ body .presentation .presentation_container {
   justify-content: space-evenly;
 }
 body .presentation .presentation_container .presentation_img_container img {
-  width: 650px;
+  width: 600px;
 }
 body .presentation .presentation_container .presentation_text_container {
   max-width: 480px;
@@ -198,7 +198,7 @@ body .morts .morts_container .arrow {
 }
 body .morts .morts_container .text_relative {
   position: relative;
-  top: -35px;
+  top: -3px;
   left: -10px;
   color: #F1F1F1;
   font-family: "Inter", sans-serif;
@@ -206,7 +206,7 @@ body .morts .morts_container .text_relative {
 }
 body .morts .morts_container .morts_text_container {
   max-width: 1010px;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 body .morts .morts_container .morts_text_container .text_wrapper {
   display: flex;

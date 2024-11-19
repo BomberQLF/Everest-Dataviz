@@ -88,7 +88,7 @@ body {
 
             .presentation_img_container {
                 img {
-                    width: 650px;
+                    width: 600px;
                 }
             }
 
@@ -225,7 +225,7 @@ body {
             }
             .text_relative {
                 position: relative;
-                top: -35px;
+                top: -3px;
                 left: -10px;
                 color: #F1F1F1;
                 font-family: $font-family-inter;
@@ -234,7 +234,7 @@ body {
 
             .morts_text_container {
                 max-width: 1010px;
-                margin-top: 6rem;
+                margin-top: 4rem;
 
                 .text_wrapper {
                     display: flex;
