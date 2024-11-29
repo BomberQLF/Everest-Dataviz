@@ -79,6 +79,7 @@ body .hero .hero_container .hero_title_container .tip-container p {
   align-items: center;
   margin: 8px 0 -5px 0;
   font-family: "Inter", sans-serif;
+  color: #2E3B60;
 }
 body .hero .hero_container .hero_title_container .tip-container p img {
   max-width: 36px;
