@@ -104,6 +104,9 @@ body .hero .hero_container .hero_img_container img {
 body .presentation {
   height: 100vh;
   background-color: #2E3B60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .presentation .presentation_container {
   display: flex;
@@ -451,6 +454,12 @@ body footer .mentions_container .mentions_text_container p {
   body .presentation .presentation_container .presentation_text_container p {
     font-size: 1rem;
   }
+  body .hero .hero_container .hero_title_container .tip-container {
+    font-size: 0.8rem;
+  }
+  body .ascensions .ascensions_container .ascensions_img_container svg {
+    margin-top: -2rem;
+  }
   body .ascensions .ascensions_container .ascensions_text_container {
     max-width: 720px;
   }
@@ -462,14 +471,29 @@ body footer .mentions_container .mentions_text_container p {
   body footer .mentions_container .mentions_text_container {
     width: 900px;
   }
+  .morts_container {
+    padding: 5rem;
+  }
   body .nations .nations_container {
-    gap: 3rem;
+    gap: 7rem;
+  }
+  body .nations .nations_container .nations_text_container h2 {
+    font-size: 2.3rem;
+  }
+  body .nations .nations_container .nations_text_container p {
+    width: 24rem;
+  }
+  body .environment .environement_container .environement_text {
+    margin-left: 1rem;
   }
   body .environment .environement_container .environement_img img {
     height: 370px;
   }
+  body .environment .environement_container .environement_text h2 {
+    font-size: 2.3rem;
+  }
   body .environment .environement_container {
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 
