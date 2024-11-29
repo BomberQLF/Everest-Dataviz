@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   // Définition de la taille du SVG
   const width = 700;
   const height = 450;
@@ -51,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .selectAll("text")
         .style("font-size", ".8rem")
         .style("font-weight", "bold")
-        .style("font-family", "Staatliches")
+        .style("font-family", "Inter")
         .style("fill", "#2E3B60");
 
       // Axe des Y avec style
@@ -61,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .call(d3.axisLeft(y))
         .selectAll("text")
         .style("font-size", ".8rem")
-        .style("font-family", "Staatliches")
+        .style("font-family", "Inter")
         .style("font-weight", "bold")
         .style("fill", "#2E3B60");
 
@@ -90,27 +89,35 @@ document.addEventListener("DOMContentLoaded", () => {
       // Ajouter des flocons comme points d'intersections
       const tooltip = d3.select("#tooltip");
 
+      // Récupération des dimensions et position du conteneur SVG
+      const svgElement = document.querySelector("svg");
+      const svgBounds = svgElement.getBoundingClientRect();
+
       svg
         .selectAll("image")
         .data(data)
         .enter()
         .append("image")
-        // Flocons de neige en guise de points d'intersection pour être davantage dans le thème
         .attr("xlink:href", "./assets/flocon.svg")
         .attr("x", (d) => x(d.Année) - 10)
         .attr("y", (d) => y(d.Sommets) - 10)
         .attr("width", 20)
         .attr("height", 20)
-        .attr("weight", "bold")
-        .attr("fill", "#2E3B60")
-        .attr("padding", "2%")
-        // Faire apparaitre / Disparaitre le tooltip (la boite qui affiche les informations par rapport au données survolés)
         .on("mouseover", (ev, d) => {
           tooltip
             .style("opacity", "1")
             .text(
               `Year: ${d3.timeFormat("%Y")(d.Année)} - Ascensions: ${d.Sommets}`
             );
+        })
+        .on("mousemove", (ev) => {
+          // Calcul des positions relatives
+          const xPosition = ev.clientX - svgBounds.left + 10;
+          const yPosition = ev.clientY - svgBounds.top + 10;
+
+          tooltip
+            .style("left", `${xPosition}px`)
+            .style("top", `${yPosition}px`);
         })
         .on("mouseleave", () => {
           tooltip.style("opacity", "0");
@@ -120,20 +127,3 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Erreur lors du chargement des données:", error)
     );
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
