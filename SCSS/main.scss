@@ -30,7 +30,6 @@ body {
         .hero_container {
             display: flex;
             padding: 1% 0 0 1%;
-            gap: 4rem;
 
             .hero_title_container {
                 display: flex;
@@ -50,6 +49,9 @@ body {
                 }
                 .hero_button {
                     margin: 0 0 1rem 1rem;
+                    position: relative;
+                    top: 4px;
+                    left: -13px;
 
                     a {
                         font-family: "Staatliches", sans-serif;
@@ -65,6 +67,39 @@ body {
                             color: #F1F1F1;
                             background-color: #2E3B60;
                         }
+                    }
+                }
+                .tip-container {
+                    display: flex;
+                    align-items: left; 
+                    justify-content: center; 
+                    flex-direction: column; 
+                    font-size: 1rem; 
+                    margin: 10px; 
+                
+                    p {
+                        display: flex;
+                        align-items: center; 
+                        margin: 8px 0 -5px 0;
+                        font-family: $font-family-inter;
+                
+                        img {
+                            max-width: 36px; 
+                            margin: 0 5px; 
+                        }
+                        #space {
+                            height: 1.5rem;
+                        }
+                        #info {
+                            height: 25px;
+                        }
+                        #keydown {
+                            height: 25px;
+                        }
+                    }
+                    #bottom-tip {
+                        position: relative;
+                        left: 10px;
                     }
                 }
             }

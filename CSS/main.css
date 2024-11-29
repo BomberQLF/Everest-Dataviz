@@ -30,7 +30,6 @@ body .hero {
 body .hero .hero_container {
   display: flex;
   padding: 1% 0 0 1%;
-  gap: 4rem;
 }
 body .hero .hero_container .hero_title_container {
   display: flex;
@@ -49,6 +48,9 @@ body .hero .hero_container .hero_title_container .hero_title .lower_title {
 }
 body .hero .hero_container .hero_title_container .hero_button {
   margin: 0 0 1rem 1rem;
+  position: relative;
+  top: 4px;
+  left: -13px;
 }
 body .hero .hero_container .hero_title_container .hero_button a {
   font-family: "Staatliches", sans-serif;
@@ -63,6 +65,37 @@ body .hero .hero_container .hero_title_container .hero_button a {
 body .hero .hero_container .hero_title_container .hero_button a:hover {
   color: #F1F1F1;
   background-color: #2E3B60;
+}
+body .hero .hero_container .hero_title_container .tip-container {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  margin: 10px;
+}
+body .hero .hero_container .hero_title_container .tip-container p {
+  display: flex;
+  align-items: center;
+  margin: 8px 0 -5px 0;
+  font-family: "Inter", sans-serif;
+}
+body .hero .hero_container .hero_title_container .tip-container p img {
+  max-width: 36px;
+  margin: 0 5px;
+}
+body .hero .hero_container .hero_title_container .tip-container p #space {
+  height: 1.5rem;
+}
+body .hero .hero_container .hero_title_container .tip-container p #info {
+  height: 25px;
+}
+body .hero .hero_container .hero_title_container .tip-container p #keydown {
+  height: 25px;
+}
+body .hero .hero_container .hero_title_container .tip-container #bottom-tip {
+  position: relative;
+  left: 10px;
 }
 body .hero .hero_container .hero_img_container img {
   width: 850px;
