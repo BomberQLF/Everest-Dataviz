@@ -178,16 +178,15 @@ body .ascensions .ascensions_container .ascensions_img_container svg {
 }
 body .ascensions .ascensions_container .ascensions_img_container #tooltip {
   opacity: 0;
-  top: 0;
-  right: -440px;
-  position: relative;
+  position: absolute;
   color: rgb(46, 59, 96);
-  font-family: Staatliches;
+  font-family: "Inter", sans-serif;
   padding: 2%;
   border: 1px solid rgb(46, 59, 96);
   border-radius: 14px;
   background-color: rgb(241, 241, 241);
-  transition: opacity 0.3s;
+  transition: opacity 1s;
+  pointer-events: none;
   width: fit-content;
 }
 body .morts {
