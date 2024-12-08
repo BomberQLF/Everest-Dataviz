@@ -392,42 +392,59 @@ body .environment .environement_container .environement_img img {
   height: 490px;
 }
 body footer {
-  height: 100vh;
-  display: flex;
   background-color: #2E3B60;
   padding: 6%;
-  border-top: 6px dotted #f1f1f1;
 }
-body footer .contact_container h3 {
-  font-size: 3rem;
-  color: #F1F1F1;
+body footer .select-info {
+  text-align: right;
+}
+body footer .select-info h3 {
   text-transform: uppercase;
   font-family: "Staatliches", sans-serif;
+  font-size: 2.7rem;
+  color: #f1f1f1;
+  margin: 20px 0;
 }
-body footer .contact_container .links_container {
-  margin-left: 1.5rem;
+body footer .mentions-details {
+  background-color: #2E3B60;
 }
-body footer .contact_container .links_container .github_container {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+body footer .mentions-details .mentions-container {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #f1f1f1;
 }
-body footer .contact_container .links_container .github_container a {
-  text-decoration: none;
-  color: #F1F1F1;
+body footer .mentions-details .mentions-container h4 {
+  text-transform: uppercase;
+  font-family: "Staatliches", sans-serif;
+  color: #f1f1f1;
+  font-size: 1.3rem;
+}
+body footer .mentions-details .mentions-container p {
+  font-size: 1rem;
+  color: #f1f1f1;
   font-family: "Inter", sans-serif;
 }
-body footer .mentions_container {
-  margin-top: 5rem;
+body footer .mentions-details .mentions-container ul li {
+  color: #f1f1f1;
+  font-family: "Inter", sans-serif;
 }
-body footer .mentions_container h3 {
-  font-size: 3rem;
-  color: #F1F1F1;
-  text-transform: uppercase;
+body footer .mentions-details .mentions-container span {
+  font-family: "Inter", sans-serif;
+  color: #f1f1f1;
+}
+body footer .mentions-details .mentions-container span a {
+  color: #f1f1f1;
+}
+body footer .sources-details {
+  background-color: #2E3B60;
+}
+body footer .sources-details .sources-container h4 {
+  color: #f1f1f1;
   font-family: "Staatliches", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
-body footer .mentions_container .mentions_text_container p {
-  color: #F1F1F1;
+body footer .sources-details .sources-container a {
+  color: #f1f1f1;
   font-family: "Inter", sans-serif;
 }
 
@@ -467,9 +484,6 @@ body footer .mentions_container .mentions_text_container p {
     display: block;
     padding: 0;
     gap: 0rem;
-  }
-  body footer .mentions_container .mentions_text_container {
-    width: 900px;
   }
   .morts_container {
     padding: 5rem;

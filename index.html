@@ -15,6 +15,7 @@
     <script src="./JavaScript/graphD3.js"></script>
     <script src="./JavaScript/morts.js"></script>
     <script src="./JavaScript/nations.js" defer></script>
+    <script src="./JavaScript/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <link rel="stylesheet" href="./CSS/main.css">
     <title>Document</title>
@@ -76,16 +77,21 @@
         <div class="ascensions_container">
             <div class="ascensions_text_container">
                 <h2>The number of ascensions per year</h2>
-                <p><span>>Everest</span> represents a challenge and an opportunity to push your limits, <span>inspiring</span> many to prove they
+                <p><span>>Everest</span> represents a challenge and an opportunity to push your limits,
+                    <span>inspiring</span> many to prove they
                     can achieve it.
                     <br><br>
-                    Here, the number of climbers actually refers to the number of people who <span>successfully</span> reached the
+                    Here, the number of climbers actually refers to the number of people who <span>successfully</span>
+                    reached the
                     summit.
-                    To reach the summit, climbers start at <span>Base Camp</span> (5,334m) and pass three camps before entering the
-                    <span>death zone</span> (8,000–8,850m). The final camp, at 8,016m, leaves just 833m to the summit, the <span>highest</span>
+                    To reach the summit, climbers start at <span>Base Camp</span> (5,334m) and pass three camps before
+                    entering the
+                    <span>death zone</span> (8,000–8,850m). The final camp, at 8,016m, leaves just 833m to the summit,
+                    the <span>highest</span>
                     point on Earth.
                     <br><br>
-                    In <span>2019</span>, Everest saw a record 876 ascents. However, no summits occurred in <span>2015</span> due to a <span>devastating</span>
+                    In <span>2019</span>, Everest saw a record 876 ascents. However, no summits occurred in
+                    <span>2015</span> due to a <span>devastating</span>
                     earthquake in Nepal. Similarly, the <span>COVID-19</span> pandemic prevented any climbs in 2020.
                     <br><br>
                     <strong><img src="./assets/flocon.svg" alt="">Hover the snowflakes for further details </strong>
@@ -176,52 +182,76 @@
     <!-- Section FOOTER -->
     <footer>
         <div class="footer_container">
-            <div class="contact_container">
-                <h3>Contact</h3>
-                <div class="links_container">
-                    <div class="github_container">
-                        <img src="./assets/gitHub.svg" alt="">
-                        <a href="https://github.com/BomberQLF">@BomberQLF</a>
-                    </div>
-                    <div class="github_container">
-                        <img src="./assets/gitHub.svg" alt="">
-                        <a href="#">@loremloremlorem</a>
-                    </div>
-                    <div class="github_container">
-                        <img src="./assets/gitHub.svg" alt="">
-                        <a href="#">@loremloremlorem</a>
-                    </div>
+            <div class="select-info">
+                <h3 id="mentions">Mentions Légales</h3>
+                <h3 id="sources">Sources</h3>
+                <h3 id="contact">Contact</h3>
+            </div>
+            <div class="mentions-details" style="display: none;">
+                <div class="mentions-container">
+                    <h4 class="titre-footer">Éditeur</h4>
+                    <p>Le site Everest Data Viz est édité par l'Université Gustave Eiffel, établissement public national
+                        à caractère scientifique, culturel et professionnel, dont le siège est situé :</p>
+                    <ul>
+                        <li>Adresse : 5 boulevard Descartes, 77454 Marne-la-Vallée Cedex 2, France</li>
+                        <li>Téléphone : +33 (0)1 60 95 75 00</li>
+                        <li>SIREN : 130026123</li>
+                    </ul>
+                    <span>Pour plus d'informations, vous pouvez consulter l'annuaire des entreprises : <a href="https://annuaire-entreprises.data.gouv.fr/entreprise/universite-gustave-eiffel-130026123">Université Gustave Eiffel - Annuaire des entreprises</a> .</span>
+                </div>
+                <div class="mentions-container">
+                    <h4 class="titre-footer">DPO (Data Protection Officer)</h4>
+                    <p>Le Délégué à la Protection des Données (DPO) de l'Université Gustave Eiffel est :</p>
+                    <ul>
+                        <li>Nom : Véronique Juge</li>
+                        <li>Email : Protectiondesdonnees-dpo@univ-eiffel.fr</li>
+                        <li>Adresse : Université Gustave Eiffel, 5 Boulevard Descartes, 77420 Champs-sur-Marne, France</li>
+                    </ul>
+                </div>
+                <div class="mentions-container">
+                    <h4 class="titre-footer">Hébergement</h4>
+                    <p>Le site Everest Data Viz est hébergé par GitHub B.V., situé à l'adresse suivante :</p>
+                    <ul>
+                        <li>Adresse : Prius Bernhardplein 200, Pays-Bas</li>
+                    </ul>
+                    <span>Pour consulter les conditions d’hébergement, veuillez vous référer à <a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">GitHub Terms of Service</a>.</span>
+                    <span>Plus d'informations sur l'entreprise : <a href="https://annuaire-entreprises.data.gouv.fr/entreprise/github-b-v-808709794">GitHub B.V. - Annuaire des entreprises</a>.</span>
+                </div>
+                <div class="mentions-container">
+                    <h4 class="titre-footer">Propriété intellectuelle</h4>
+                    <p>Le nom de domaine Everest Data Viz est une marque libre et aucune opposition ni dépôt similaire n’a été enregistré auprès de l'INPI.</p>
+                </div>
+                <div class="mentions-container">
+                    <h4 class="titre-footer">Création du site</h4>
+                    <p>Le site Everest Data Viz est un projet étudiant, créé par :</p>
+                    <ul>
+                        <li>Tom Murphy : Développeur</li>
+                        <li>Enola Tourneroche : Designer et rédactrice en chef</li>
+                        <li>Anastasia Gawryluk : Designer et rédactrice</li>
+                    </ul>
                 </div>
             </div>
-            <div class="mentions_container">
-                <h3>Mentions</h3>
-                <div class="mentions_text_container">
-                    <p>Eminuit autem inter humilia supergressa iam impotentia fines mediocrium delictorum nefanda
-                        Clematii
-                        cuiusdam Alexandrini nobilis mors repentina; cuius socrus cum misceri sibi generum, flagrans
-                        eius
-                        amore, non impetraret, ut ferebatur, per palatii pseudothyrum</p>
-                    <br>
-                    <p>introducta, oblato pretioso reginae monili id adsecuta est, ut ad Honoratum tum comitem orientis
-                        formula missa letali omnino scelere nullo contactus idem Clematius nec hiscere nec loqui
-                        permissus
-                        occideretur.introducta, oblato pretioso reginae monili id adsecuta est, ut ad Honoratum tum
-                        comitem
-                        orientis formula missa letali omnino scelere nullo contactus idem Clematius nec hiscere nec
-                        loqui
-                        permissus occideretur.introducta, oblato pretioso reginae monili id adsecuta est, ut ad
-                        Honoratum
-                        tum comitem orientis formula missa letali omnino scelere nullo contactus idem Clematius nec
-                        hiscere
-                        nec loqui permissus occideretur.introducta, oblato pretioso reginae monili id adsecuta est, ut
-                        ad
-                        Honoratum tum comitem orientis formula missa letali omnino scelere nullo contactus idem
-                        Clematius
-                        nec hiscere nec loqui permissus occideretur.introducta, oblato pretioso reginae monili id
-                        adsecuta
-                        est, ut ad Honoratum tum comitem orientis formula missa letali omnino scelere nullo contactus
-                        idem
-                        Clematius nec hiscere nec loqui permissus occideretur.</p>
+            <div class="sources-details" style="display: none;">
+                <div class="sources-container">
+                    <h4 class="titre-footer">Données</h4>
+                    <a href="https://www.himalayandatabase.com/">Himalayan Database</a>
+                </div>
+                <div class="sources-container">
+                    <h4 class="titre-footer">Librairie</h4>
+                    <a href="https://d3js.org/">D3.js</a>
+                </div>
+                <div class="sources-container">
+                    <h4 class="titre-footer">Copywriting</h4>
+                    <ul>
+                        <li><a href="https://www.britannica.com/place/Mount-Everest/History-of-exploration">Britannica - History of exploration on Mount Everest</a></li>
+                        <li><a href="https://www.britannica.com/place/Mount-Everest/The-height-of-Everest">Britannica - The height of Everest</a></li>
+                        <li><a href="https://www.britannica.com/place/Mount-Everest">Britannica - Mount Everest</a></li>
+                        <li><a href="https://www.nepalhighlandtreks.com/blog/what-is-the-death-zone-on-everest-ebc-trek-2024#:~:text=However%2C%20for%20climbers%20to%20reach,by%20cell%20due%20to%20a">Nepal Highland Treks - Death Zone on Everest</a></li>
+                        <li><a href="https://prezi.com/wmuca6iz-yye/mt-everest-presentation/">Prezi - Mt. Everest Presentation</a></li>
+                        <li><a href="https://earth.org/amidst-growing-mountain-tourism-in-nepal-mount-everest-confronts-the-perils-of-pollution/#:~:text=3">Earth.org - Growing Mountain Tourism and Pollution</a></li>
+                        <li><a href="https://maximustour.medium.com/what-is-the-average-age-to-climb-mount-everest-a0bcc00d8410#:~:text=The%20data%20reveals%20that%20the,a%20third%20of%20all%20summiteers">Medium - Average Age to Climb Mount Everest</a></li>
+                        <li><a href="https://www.nationalgeographic.fr/exploration/2017/02/1953-tenzing-et-hillary-les-deux-premiers-hommes-ayant-reussi-lascension-de-leverest">NationalGeographic - 1953 : Tenzing et Hillary, les deux premiers hommes ayant réussi l'ascension de l'Everest</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
