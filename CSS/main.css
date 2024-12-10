@@ -487,15 +487,18 @@ body footer .contact-details .titre-footer {
 body footer .contact-details p {
   color: #F1F1F1;
   font-family: "Inter", sans-serif;
+  margin-bottom: 3rem;
 }
 body footer .contact-details .links-profile-container {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid #F1F1F1;
 }
 body footer .contact-details .links-profile-container .profile-container .prenom {
   color: #F1F1F1;
   font-family: "Staatliches", sans-serif;
   font-size: 2rem;
+  margin-bottom: 1.1rem;
 }
 body footer .contact-details .links-profile-container .profile-container .images-container {
   display: flex;

@@ -541,15 +541,18 @@ body {
             p {
                 color: #F1F1F1;
                 font-family: $font-family-inter;
+                margin-bottom: 3rem;
             }
             .links-profile-container {
                 display: flex;
                 justify-content: space-between;
+                border-top: 1px solid #F1F1F1;
                 .profile-container {
                     .prenom {
                         color: #F1F1F1;
                         font-family: $font-familiy-staatliches;
                         font-size: 2rem;
+                        margin-bottom: 1.1rem;
                     }
                     .images-container {
                         display: flex;
