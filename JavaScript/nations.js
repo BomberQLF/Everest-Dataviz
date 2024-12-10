@@ -51,7 +51,7 @@ fetch("./JSON/nation_count.json")
       countText.style.zIndex = "10"; 
       countText.style.display = "none";
       countText.style.fontSize = "2rem";
-      countText.style.fontFamily = "Staatliches";
+      countText.style.fontFamily = "Inter";
       bar.appendChild(countText);
     
       // Ajouter la barre au conteneur principal

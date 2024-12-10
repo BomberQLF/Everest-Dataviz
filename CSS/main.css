@@ -137,7 +137,7 @@ body .presentation .presentation_container .presentation_text_container p span {
 }
 body .presentation .presentation_container .presentation_text_container .sources-note {
   color: #F1F1F1;
-  font-family: "Staatliches", sans-serif;
+  font-family: "Inter", sans-serif;
   cursor: pointer;
 }
 body .ascensions {
@@ -199,7 +199,7 @@ body .ascensions .ascensions_container #sources-graph {
   right: 400px;
   bottom: -196%;
   color: #2E3B60;
-  font-family: "Staatliches", sans-serif;
+  font-family: "Inter", sans-serif;
   cursor: pointer;
 }
 body .morts {
@@ -272,7 +272,7 @@ body .morts .morts_container .morts_text_container a {
   position: absolute;
   bottom: 5%;
   color: #F1F1F1;
-  font-family: "Staatliches", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 body .morts .morts_container input[type=range] {
   width: 100%;
@@ -377,7 +377,7 @@ body .nations .nations_container #nation-sources {
   bottom: -374%;
   right: 16%;
   color: #2E3B60;
-  font-family: "Staatliches", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 body .environment {
   display: flex;
@@ -409,7 +409,7 @@ body .environment .environement_container .environement_text p span {
 }
 body .environment .environement_container .environement_text #sources-environement {
   color: #F1F1F1;
-  font-family: "Staatliches", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 body .environment .environement_container .environement_img {
   display: flex;
@@ -431,6 +431,7 @@ body footer .select-info h3 {
   font-size: 2.7rem;
   color: #f1f1f1;
   margin: 20px 0;
+  cursor: pointer;
 }
 body footer .mentions-details {
   background-color: #2E3B60;
@@ -473,6 +474,41 @@ body footer .sources-details .sources-container h4 {
 body footer .sources-details .sources-container a {
   color: #f1f1f1;
   font-family: "Inter", sans-serif;
+}
+body footer .contact-details {
+  background-color: #2E3B60;
+}
+body footer .contact-details .titre-footer {
+  color: #f1f1f1;
+  font-family: "Staatliches", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+body footer .contact-details p {
+  color: #F1F1F1;
+  font-family: "Inter", sans-serif;
+}
+body footer .contact-details .links-profile-container {
+  display: flex;
+  justify-content: space-between;
+}
+body footer .contact-details .links-profile-container .profile-container .prenom {
+  color: #F1F1F1;
+  font-family: "Staatliches", sans-serif;
+  font-size: 2rem;
+}
+body footer .contact-details .links-profile-container .profile-container .images-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+body footer .contact-details .links-profile-container .profile-container .images-container a {
+  color: #F1F1F1;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 1rem;
 }
 
 @media (min-width: 1024px) and (max-width: 1300px) {
