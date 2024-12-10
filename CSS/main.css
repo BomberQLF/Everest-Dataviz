@@ -196,8 +196,8 @@ body .ascensions .ascensions_container .ascensions_img_container #tooltip {
 }
 body .ascensions .ascensions_container #sources-graph {
   position: absolute;
-  right: 400px;
-  bottom: -196%;
+  right: 530px;
+  bottom: -192%;
   color: #2E3B60;
   font-family: "Inter", sans-serif;
   cursor: pointer;
@@ -241,7 +241,7 @@ body .morts .morts_container .avalanche {
 }
 body .morts .morts_container .arrow {
   position: relative;
-  bottom: -170px;
+  bottom: -100px;
   left: -50px;
 }
 body .morts .morts_container .text_relative {
@@ -270,7 +270,7 @@ body .morts .morts_container .morts_text_container p span {
 }
 body .morts .morts_container .morts_text_container a {
   position: absolute;
-  bottom: 5%;
+  bottom: 7%;
   color: #F1F1F1;
   font-family: "Inter", sans-serif;
 }
@@ -373,9 +373,6 @@ body .nations .nations_container .nations_text_container p {
   font-family: "Inter", sans-serif;
 }
 body .nations .nations_container #nation-sources {
-  position: absolute;
-  bottom: -374%;
-  right: 16%;
   color: #2E3B60;
   font-family: "Inter", sans-serif;
 }
@@ -465,6 +462,10 @@ body footer .mentions-details .mentions-container span a {
 body footer .sources-details {
   background-color: #2E3B60;
 }
+body footer .sources-details .sources-container {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f1f1f1;
+}
 body footer .sources-details .sources-container h4 {
   color: #f1f1f1;
   font-family: "Staatliches", sans-serif;
@@ -473,6 +474,18 @@ body footer .sources-details .sources-container h4 {
 }
 body footer .sources-details .sources-container a {
   color: #f1f1f1;
+  font-family: "Inter", sans-serif;
+}
+body footer .sources-details .sources-container ol {
+  color: #F1F1F1;
+  font-family: "Inter", sans-serif;
+}
+body footer .sources-details .sources-container ul {
+  color: #F1F1F1;
+  font-family: "Inter", sans-serif;
+}
+body footer .sources-details .sources-container p {
+  color: #F1F1F1;
   font-family: "Inter", sans-serif;
 }
 body footer .contact-details {
@@ -510,7 +523,6 @@ body footer .contact-details .links-profile-container .profile-container .images
   font-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
-  text-decoration: none;
   gap: 1rem;
 }
 
@@ -550,6 +562,14 @@ body footer .contact-details .links-profile-container .profile-container .images
     display: block;
     padding: 0;
     gap: 0rem;
+  }
+  body .ascensions .ascensions_container #sources-graph {
+    position: absolute;
+    right: 680px;
+    bottom: -196%;
+    color: #2E3B60;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
   }
   .morts_container {
     padding: 5rem;

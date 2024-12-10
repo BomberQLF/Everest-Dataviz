@@ -219,10 +219,10 @@ body {
             }
             #sources-graph {
                 position: absolute;
-                right: 400px;
-                bottom: -196%;
+                right: 530px;
+                bottom: -192%;
                 color: #2E3B60;
-                font-family: $font-family-inter;
+                font-family: "Inter", sans-serif;
                 cursor: pointer;
             }
         }
@@ -270,7 +270,7 @@ body {
             }
             .arrow {
                 position: relative;
-                bottom: -170px;
+                bottom: -100px;
                 left: -50px;
             }
             .text_relative {
@@ -302,7 +302,7 @@ body {
                     }
                     a {
                         position: absolute;
-                        bottom: 5%;
+                        bottom: 7%;
                         color: #F1F1F1;
                         font-family: $font-family-inter;
                     }
@@ -411,9 +411,6 @@ body {
                 }
             }
             #nation-sources {
-                position: absolute;
-                bottom: -374%;
-                right: 16%;
                 color: #2E3B60;
                 font-family: $font-family-inter;
             }
@@ -516,6 +513,9 @@ body {
         .sources-details {
             background-color: #2E3B60;
             .sources-container {
+                padding-bottom: 2rem;
+                border-bottom: 1px solid #f1f1f1;
+
                 h4 {
                     color: #f1f1f1;
                     font-family: $font-familiy-staatliches;
@@ -526,6 +526,19 @@ body {
                     color: #f1f1f1;
                     font-family: $font-family-inter;
                 }
+                ol {
+                    color: #F1F1F1;
+                    font-family: $font-family-inter;
+                }
+                ul {
+                    color: #F1F1F1;
+                    font-family: $font-family-inter;
+                }
+                p {
+                    color: #F1F1F1;
+                    font-family: $font-family-inter;
+                }
+                
             }
         }
 
@@ -563,7 +576,6 @@ body {
                             font-family: $font-family-inter;
                             display: flex;
                             align-items: center;
-                            text-decoration: none;
                             gap: 1rem;
                         }
                     }
@@ -620,6 +632,14 @@ body {
         display: block;
         padding: 0;
         gap: 0rem;
+    }
+    body .ascensions .ascensions_container #sources-graph {
+        position: absolute;
+        right: 680px;
+        bottom: -196%;
+        color: #2E3B60;
+        font-family: "Inter", sans-serif;
+        cursor: pointer;
     }
     .morts_container {
         padding: 5rem;

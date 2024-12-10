@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Sections
     const mentionsSection = document.querySelector('.mentions-details');
     const sourcesSection = document.querySelector('.sources-details');
-
-    // Ajoute une éventuelle section pour Contact
     const contactSection = document.querySelector('.contact-details');
 
     // Par défaut, footer a une hauteur complète
@@ -18,28 +16,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fonction pour réinitialiser tout
     const resetSectionsAndStyles = () => {
-        // Cacher toutes les sections
         mentionsSection.style.display = 'none';
         sourcesSection.style.display = 'none';
         if (contactSection) contactSection.style.display = 'none';
 
-        // Retirer le style actif des boutons
-        mentionsBtn.classList.remove('active');
-        sourcesBtn.classList.remove('active');
-        contactBtn.classList.remove('active');
+        [mentionsBtn, sourcesBtn, contactBtn].forEach(button => {
+            button.classList.remove('active');
+            button.style.borderBottom = 'none';
+            button.style.display = ''; 
+        });
     };
 
     // Fonction pour gérer le clic sur un bouton
     const handleButtonClick = (button, section) => {
-        resetSectionsAndStyles(); // Réinitialise les styles et sections
+        resetSectionsAndStyles(); 
 
-        // Afficher la section associée
         section.style.display = 'block';
-
-        // Ajouter la classe active au bouton cliqué
         button.classList.add('active');
-
-        // Ajuster la hauteur du footer pour s'adapter à son contenu
+        button.style.borderBottom = '1px solid white';
+        button.style.display = 'inline'; 
         footer.style.height = 'auto';
     };
 
