@@ -112,8 +112,15 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .on("mousemove", (ev) => {
           // Calcul des positions relatives
-          const xPosition = ev.clientX - svgBounds.left + 10;
-          const yPosition = ev.clientY - svgBounds.top + 10;
+          const xPosition = Math.min(
+            ev.clientX - svgBounds.left + 10,
+            svgBounds.width - tooltip.node().offsetWidth - 10
+          );
+
+          const yPosition = Math.min(
+            ev.clientY - svgBounds.top + 10,
+            svgBounds.height - tooltip.node().offsetHeight - 10
+          );
 
           tooltip
             .style("left", `${xPosition}px`)

@@ -228,7 +228,6 @@ body .morts .morts_container .mort_top_container .nombre_morts {
   font-weight: 400;
   font-size: 8rem;
   text-align: center;
-  margin-top: 2rem;
 }
 body .morts .morts_container .chute {
   position: absolute;
@@ -255,7 +254,6 @@ body .morts .morts_container .text_relative {
 }
 body .morts .morts_container .morts_text_container {
   max-width: 1010px;
-  margin-top: 4rem;
 }
 body .morts .morts_container .morts_text_container .text_wrapper {
   display: flex;
@@ -309,7 +307,6 @@ body .morts .morts_container .range-container {
   width: 100%;
   text-align: center;
   position: relative;
-  margin-top: 50px;
   margin-bottom: 3rem;
 }
 body .morts .morts_container .dates {
