@@ -135,6 +135,11 @@ body .presentation .presentation_container .presentation_text_container p {
 body .presentation .presentation_container .presentation_text_container p span {
   font-weight: 400;
 }
+body .presentation .presentation_container .presentation_text_container .sources-note {
+  color: #F1F1F1;
+  font-family: "Staatliches", sans-serif;
+  cursor: pointer;
+}
 body .ascensions {
   height: 100vh;
   display: flex;
@@ -188,6 +193,14 @@ body .ascensions .ascensions_container .ascensions_img_container #tooltip {
   transition: opacity 1s;
   pointer-events: none;
   width: fit-content;
+}
+body .ascensions .ascensions_container #sources-graph {
+  position: absolute;
+  right: 400px;
+  bottom: -196%;
+  color: #2E3B60;
+  font-family: "Staatliches", sans-serif;
+  cursor: pointer;
 }
 body .morts {
   height: 100vh;
@@ -256,6 +269,12 @@ body .morts .morts_container .morts_text_container p {
 }
 body .morts .morts_container .morts_text_container p span {
   font-weight: 400;
+}
+body .morts .morts_container .morts_text_container a {
+  position: absolute;
+  bottom: 5%;
+  color: #F1F1F1;
+  font-family: "Staatliches", sans-serif;
 }
 body .morts .morts_container input[type=range] {
   width: 100%;
@@ -356,6 +375,13 @@ body .nations .nations_container .nations_text_container p {
   font-weight: 200;
   font-family: "Inter", sans-serif;
 }
+body .nations .nations_container #nation-sources {
+  position: absolute;
+  bottom: -374%;
+  right: 16%;
+  color: #2E3B60;
+  font-family: "Staatliches", sans-serif;
+}
 body .environment {
   display: flex;
   height: 100vh;
@@ -383,6 +409,10 @@ body .environment .environement_container .environement_text p {
 }
 body .environment .environement_container .environement_text p span {
   font-weight: 400;
+}
+body .environment .environement_container .environement_text #sources-environement {
+  color: #F1F1F1;
+  font-family: "Staatliches", sans-serif;
 }
 body .environment .environement_container .environement_img {
   display: flex;
