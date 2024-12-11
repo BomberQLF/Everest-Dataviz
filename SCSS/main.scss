@@ -153,6 +153,7 @@ body {
                     color: #F1F1F1;
                     font-family: $font-family-inter;
                     cursor: pointer;
+                    font-size: .8rem;
                 }
             }
         }
@@ -224,6 +225,7 @@ body {
                 font-weight: 400;
                 position: relative;
                 bottom: -20px;
+                font-size: .8rem;
             }
         }
     }
@@ -362,7 +364,7 @@ body {
             justify-content: center;
             align-items: center;
             gap: 15rem;
-            
+
             #nations_graph_container {
                 height: 400px;
                 display: flex;
@@ -415,6 +417,7 @@ body {
                 font-family: $font-family-inter;
                 position: relative;
                 bottom: -20px;
+                font-size: .8rem;
             }
         }
     }
@@ -450,6 +453,7 @@ body {
                 #sources-environement {
                     color: #F1F1F1;
                     font-family: $font-family-inter;
+                    font-size: .8rem;
                 }
             }
             .environement_img {
@@ -642,6 +646,7 @@ body {
         color: #2E3B60;
         font-family: "Inter", sans-serif;
         cursor: pointer;
+        font-size: .8rem;
     }
     .morts_container {
         padding: 5rem;

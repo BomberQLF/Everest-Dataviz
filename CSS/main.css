@@ -139,6 +139,7 @@ body .presentation .presentation_container .presentation_text_container .sources
   color: #F1F1F1;
   font-family: "Inter", sans-serif;
   cursor: pointer;
+  font-size: 0.8rem;
 }
 body .ascensions {
   height: 100vh;
@@ -201,6 +202,7 @@ body .ascensions .ascensions_container #sources-graph {
   font-weight: 400;
   position: relative;
   bottom: -20px;
+  font-size: 0.8rem;
 }
 body .morts {
   height: 100vh;
@@ -377,6 +379,7 @@ body .nations .nations_container #nation-sources {
   font-family: "Inter", sans-serif;
   position: relative;
   bottom: -20px;
+  font-size: 0.8rem;
 }
 body .environment {
   display: flex;
@@ -409,6 +412,7 @@ body .environment .environement_container .environement_text p span {
 body .environment .environement_container .environement_text #sources-environement {
   color: #F1F1F1;
   font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
 }
 body .environment .environement_container .environement_img {
   display: flex;
@@ -572,6 +576,7 @@ body footer .contact-details .links-profile-container .profile-container .images
     color: #2E3B60;
     font-family: "Inter", sans-serif;
     cursor: pointer;
+    font-size: 0.8rem;
   }
   .morts_container {
     padding: 5rem;

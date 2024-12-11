@@ -110,21 +110,22 @@ document.addEventListener("DOMContentLoaded", () => {
               `Year: ${d3.timeFormat("%Y")(d.Année)} - Ascensions: ${d.Sommets}`
             );
         })
-        .on("mousemove", (ev) => {
-          // Calcul des positions relatives
-          const xPosition = Math.min(
-            ev.clientX - svgBounds.left + 10,
-            svgBounds.width - tooltip.node().offsetWidth - 10
-          );
+        .on("mousemove", (ev, d) => {
+          // Obtenez les dimensions du conteneur parent
+          const containerBounds = document
+            .querySelector(".ascensions_img_container")
+            .getBoundingClientRect();
 
-          const yPosition = Math.min(
-            ev.clientY - svgBounds.top + 10,
-            svgBounds.height - tooltip.node().offsetHeight - 10
-          );
+          // Calculer les coordonnées relatives pour positionner le tooltip
+          const xPosition = ev.clientX - containerBounds.left + 10; 
+          const yPosition = ev.clientY - containerBounds.top + 10;
 
+          // Appliquer les styles pour positionner dynamiquement le tooltip
           tooltip
+            .style("position", "absolute")
             .style("left", `${xPosition}px`)
-            .style("top", `${yPosition}px`);
+            .style("top", `${yPosition}px`)
+            .style("opacity", "1");
         })
         .on("mouseleave", () => {
           tooltip.style("opacity", "0");
