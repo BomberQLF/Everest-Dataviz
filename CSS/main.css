@@ -195,12 +195,12 @@ body .ascensions .ascensions_container .ascensions_img_container #tooltip {
   width: fit-content;
 }
 body .ascensions .ascensions_container #sources-graph {
-  position: absolute;
-  right: 530px;
-  bottom: -192%;
   color: #2E3B60;
   font-family: "Inter", sans-serif;
   cursor: pointer;
+  font-weight: 400;
+  position: relative;
+  bottom: -20px;
 }
 body .morts {
   height: 100vh;
@@ -326,7 +326,7 @@ body .nations .nations_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 18rem;
+  gap: 15rem;
 }
 body .nations .nations_container #nations_graph_container {
   height: 400px;
@@ -375,6 +375,8 @@ body .nations .nations_container .nations_text_container p {
 body .nations .nations_container #nation-sources {
   color: #2E3B60;
   font-family: "Inter", sans-serif;
+  position: relative;
+  bottom: -20px;
 }
 body .environment {
   display: flex;

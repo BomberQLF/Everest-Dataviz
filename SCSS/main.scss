@@ -218,12 +218,12 @@ body {
                   }
             }
             #sources-graph {
-                position: absolute;
-                right: 530px;
-                bottom: -192%;
                 color: #2E3B60;
                 font-family: "Inter", sans-serif;
                 cursor: pointer;
+                font-weight: 400;
+                position: relative;
+                bottom: -20px;
             }
         }
     }
@@ -361,8 +361,8 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 18rem;
-
+            gap: 15rem;
+            
             #nations_graph_container {
                 height: 400px;
                 display: flex;
@@ -413,6 +413,8 @@ body {
             #nation-sources {
                 color: #2E3B60;
                 font-family: $font-family-inter;
+                position: relative;
+                bottom: -20px;
             }
         }
     }
