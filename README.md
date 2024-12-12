@@ -1,7 +1,8 @@
 # Everest-Dataviz
 
 # Aperçu
-(`/assets/appercu-dataviz.png`)
+
+![Aperçu de la data visualisation](/assets/appercu-dataviz.png)
 
 ## Description
 Everest-Dataviz est un projet de visualisation de données interactif et immersif centré sur le Mont Everest. Ce site offre une expérience éducative et visuelle en présentant des données historiques, environnementales, et statistiques sur le sommet le plus élevé du monde. Il explore notamment le nombre d'ascensions, les causes de mortalité, l'origine des grimpeurs, ainsi que les impacts environnementaux des expéditions.
