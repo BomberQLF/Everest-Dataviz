@@ -103,6 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .attr("y", (d) => y(d.Sommets) - 10)
         .attr("width", 20)
         .attr("height", 20)
+        .attr("padding", 20)
         .on("mouseover", (ev, d) => {
           tooltip
             .style("opacity", "1")
