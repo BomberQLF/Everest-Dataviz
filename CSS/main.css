@@ -271,8 +271,6 @@ body .morts .morts_container .morts_text_container p span {
   font-weight: 400;
 }
 body .morts .morts_container .morts_text_container a {
-  position: absolute;
-  bottom: 7%;
   color: #F1F1F1;
   font-family: "Inter", sans-serif;
 }
